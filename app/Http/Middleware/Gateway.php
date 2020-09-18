@@ -43,27 +43,27 @@ class Gateway
                     Event::listen("JeroenNoten\LaravelAdminLte\Events\BuildingMenu",function ($e){
                         $e->menu->add([
                             "text"=>"Data Ruangan",
-                            "url"=>"ruangan",
+                            "url"=>"master/ruangan",
                             "icon"=>"fa fa-file"
                         ]);
                         $e->menu->add([
                             "text"=>"Data Dosen",
-                            "url"=>"dosen",
+                            "url"=>"master/dosen",
                             "icon"=>"fa fa-file"
                         ]);
                         $e->menu->add([
                             "text"=>"Data Mahasiswa",
-                            "url"=>"mahasiswa",
+                            "url"=>"master/mahasiswa",
                             "icon"=>"fa fa-file"
                         ]);
                         $e->menu->add([
                             "text"=>"Data Sekretariat",
-                            "url"=>"sekretariat",
+                            "url"=>"master/sekretariat",
                             "icon"=>"fa fa-file"
                         ]);
                         $e->menu->add([
                             "text"=>"Data Administrator",
-                            "url"=>"mahasiswa",
+                            "url"=>"master/administrator",
                             "icon"=>"fa fa-file"
                         ]);
 
@@ -79,6 +79,11 @@ class Gateway
                             "text"=>"Penjadwalan Sidang",
                             "url"=>"sidang",
                             "icon"=>"fa fa-calendar"
+                        ]);
+                        $e->menu->add([
+                            "text"=>"Dosen Pembimbing",
+                            "url"=>"pembimbing",
+                            "icon"=>"fa fa-users"
                         ]);
                         $e->menu->add([
                             "text"=>"Laporan",

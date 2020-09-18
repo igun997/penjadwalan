@@ -9,6 +9,10 @@ class ScheduleStatus implements CastsAttributes
     const CREATED = 0;
     const ONGOING = 1;
     const COMPLETED = 2;
+    const GRADUATE_SEMINAR = 3;
+    const GRADUATE_SIDANG = 4;
+    const UNGRADUATE_SIDANG = 5;
+    const UNGRADUATE_SEMINAR = 6;
 
     /**
      * Cast the given value.
@@ -43,8 +47,14 @@ class ScheduleStatus implements CastsAttributes
             return "Dibuat";
         }elseif ($level == ScheduleStatus::ONGOING){
             return "Dalam Proses";
-        }elseif ($level == ScheduleStatus::COMPLETED){
-            return "Selesai";
+        }elseif ($level == ScheduleStatus::GRADUATE_SEMINAR){
+            return "Lulus Seminar";
+        }elseif ($level == ScheduleStatus::UNGRADUATE_SEMINAR){
+            return "Gagal Seminar";
+        }elseif ($level == ScheduleStatus::UNGRADUATE_SIDANG){
+            return "Gagal Sidang";
+        }elseif ($level == ScheduleStatus::GRADUATE_SIDANG){
+            return "Lulus Sidang";
         }else{
             return  FALSE;
         }
