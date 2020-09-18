@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePurchaseItemsTable extends Migration
+class CreateRoomsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,11 @@ class CreatePurchaseItemsTable extends Migration
      */
     public function up()
     {
-        Schema::create('purchase_items', function (Blueprint $table) {
+        Schema::create('rooms', function (Blueprint $table) {
             $table->integer('id', true);
-            $table->integer('purchase_id')->index('purchase_id');
-            $table->integer('product_id')->index('product_id');
-            $table->double('qty');
-            $table->double('price');
-            $table->double('subtotal');
+            $table->string('name', 10);
+            $table->date('created_at');
+            $table->date('updated_at');
         });
     }
 
@@ -30,6 +28,6 @@ class CreatePurchaseItemsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('purchase_items');
+        Schema::dropIfExists('rooms');
     }
 }
