@@ -27,5 +27,9 @@
 
 @section("js")
     @include("msg")
+    <script>
+        $(document).ready(function () {
 
+        })
+    </script>
 @stop

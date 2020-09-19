@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "de31a675b67c702c292befed6ef90da7",
+    "content-hash": "1c31ce1666bfdacdaed58af11df300bc",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -1231,6 +1231,46 @@
                 "url"
             ],
             "time": "2019-07-01T23:21:34+00:00"
+        },
+        {
+            "name": "igun997/utility",
+            "version": "0.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/igun997/utility.git",
+                "reference": "bb3ddea69dda0682b251ed831272c506d2eb863b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/igun997/utility/zipball/bb3ddea69dda0682b251ed831272c506d2eb863b",
+                "reference": "bb3ddea69dda0682b251ed831272c506d2eb863b",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4",
+                "phpoffice/phpspreadsheet": "^1.5"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.2@dev"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Igun997\\Utility\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Indra Gunanda",
+                    "email": "indra@imceria.com"
+                }
+            ],
+            "description": "Utility",
+            "time": "2020-09-08T14:42:33+00:00"
         },
         {
             "name": "jeroennoten/laravel-adminlte",

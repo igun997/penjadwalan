@@ -29,7 +29,7 @@ Route::prefix("master")->middleware("gateway:0")->name("master.")->namespace("Ma
         Route::get("/update/{id}","Ruangan@update")->name("update");
         Route::post("/update/{id}","Ruangan@update_action")->name("update.action");
 
-        Route::get("/delete/{id}","Ruangan@update")->name("delete");
+        Route::get("/delete/{id}","Ruangan@delete")->name("delete");
     });
 
     Route::prefix("dosen")->name("dosen.")->group(function (){
@@ -41,7 +41,7 @@ Route::prefix("master")->middleware("gateway:0")->name("master.")->namespace("Ma
         Route::get("/update/{id}","Dosen@update")->name("update");
         Route::post("/update/{id}","Dosen@update_action")->name("update.action");
 
-        Route::get("/delete/{id}","Dosen@update")->name("delete");
+        Route::get("/delete/{id}","Dosen@delete")->name("delete");
     });
 
     Route::prefix("mahasiswa")->name("mahasiswa.")->group(function (){
@@ -53,7 +53,7 @@ Route::prefix("master")->middleware("gateway:0")->name("master.")->namespace("Ma
         Route::get("/update/{id}","Mahasiswa@update")->name("update");
         Route::post("/update/{id}","Mahasiswa@update_action")->name("update.action");
 
-        Route::get("/delete/{id}","Mahasiswa@update")->name("delete");
+        Route::get("/delete/{id}","Mahasiswa@delete")->name("delete");
     });
 
     Route::prefix("sekretariat")->name("sekretariat.")->group(function (){
@@ -65,7 +65,7 @@ Route::prefix("master")->middleware("gateway:0")->name("master.")->namespace("Ma
         Route::get("/update/{id}","Sekretariat@update")->name("update");
         Route::post("/update/{id}","Sekretariat@update_action")->name("update.action");
 
-        Route::get("/delete/{id}","Sekretariat@update")->name("delete");
+        Route::get("/delete/{id}","Sekretariat@delete")->name("delete");
     });
 
     Route::prefix("administrator")->name("administrator.")->group(function (){
@@ -77,7 +77,7 @@ Route::prefix("master")->middleware("gateway:0")->name("master.")->namespace("Ma
         Route::get("/update/{id}","Administrator@update")->name("update");
         Route::post("/update/{id}","Administrator@update_action")->name("update.action");
 
-        Route::get("/delete/{id}","Administrator@update")->name("delete");
+        Route::get("/delete/{id}","Administrator@delete")->name("delete");
     });
 });
 //Sekretariat
@@ -90,7 +90,7 @@ Route::prefix("pembimbing")->middleware("gateway:1")->name("pembimbing.")->names
     Route::get("/update/{id}","Pembimbing@update")->name("update");
     Route::post("/update/{id}","Pembimbing@update_action")->name("update.action");
 
-    Route::get("/delete/{id}","Pembimbing@update")->name("delete");
+    Route::get("/delete/{id}","Pembimbing@delete")->name("delete");
 });
 
 Route::prefix("seminar")->middleware("gateway:1")->name("seminar.")->namespace("Penjadwalan")->group(function (){
@@ -102,7 +102,7 @@ Route::prefix("seminar")->middleware("gateway:1")->name("seminar.")->namespace("
     Route::get("/update/{id}","Penjadwalan@update")->name("update");
     Route::post("/update/{id}","Penjadwalan@update_action")->name("update.action");
 
-    Route::get("/delete/{id}","Penjadwalan@update")->name("delete");
+    Route::get("/delete/{id}","Penjadwalan@delete")->name("delete");
 });
 
 
@@ -115,7 +115,7 @@ Route::prefix("sidang")->middleware("gateway:1")->name("sidang.")->namespace("Pe
     Route::get("/update/{id}","Penjadwalan@update")->name("update");
     Route::post("/update/{id}","Penjadwalan@update_action")->name("update.action");
 
-    Route::get("/delete/{id}","Penjadwalan@update")->name("delete");
+    Route::get("/delete/{id}","Penjadwalan@delete")->name("delete");
 });
 //Siswa
 Route::prefix("jadwal")->middleware("gateway:2")->namespace("Jadwal")->name("jadwal.")->group(function (){

@@ -1,15 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="657272b6-7b91-4bd1-ae69-0181d8c7e683" name="Default Changelist" comment="" />
+    <list default="true" id="657272b6-7b91-4bd1-ae69-0181d8c7e683" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Console/Commands/ContractMakeCommand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Console/Commands/stubs/contract.stub" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Contracts/CRUDContract.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Contracts/ControllerContract.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Master/Ruangan.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/master/ruangan/form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/master/ruangan/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/msg.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/msg.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -143,20 +180,34 @@
       <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
       <path value="$PROJECT_DIR$/vendor/league/mime-type-detection" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/vendor/igun997/utility" />
     </include_path>
   </component>
   <component name="ProjectId" id="1hgh5PntPyzF3g3mySKFzMPsgIM" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="php.override.implement.member.chooser.php.doc" value="DEFAULT" />
+  </component>
+  <component name="RunManager">
+    <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner scope="XML" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -169,17 +220,52 @@
       <option name="presentableId" value="Default" />
       <updated>1600438458422</updated>
       <workItem from="1600438461126" duration="11094000" />
+      <workItem from="1600451402586" duration="6380000" />
+      <workItem from="1600520402698" duration="901000" />
     </task>
+    <task id="LOCAL-00001" summary="Mapping">
+      <created>1600451435694</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1600451435694</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Mapping" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mapping" />
   </component>
   <component name="WindowStateProjectService">
     <state x="430" y="202" width="523" height="385" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600443393611">
       <screen x="0" y="26" width="1366" height="742" />
     </state>
     <state x="430" y="202" width="523" height="385" key="#com.intellij.fileTypes.FileTypeChooser/0.26.1366.742@0.26.1366.742" timestamp="1600443393611" />
+    <state x="487" y="82" width="383" height="615" key="#com.intellij.ide.util.MemberChooser" timestamp="1600458376686">
+      <screen x="0" y="26" width="1366" height="742" />
+    </state>
+    <state x="487" y="82" width="383" height="615" key="#com.intellij.ide.util.MemberChooser/0.26.1366.742@0.26.1366.742" timestamp="1600458376686" />
+    <state x="278" y="133" width="802" height="523" key="Vcs.Push.Dialog.v2" timestamp="1600451444217">
+      <screen x="0" y="26" width="1366" height="742" />
+    </state>
+    <state x="278" y="133" width="802" height="523" key="Vcs.Push.Dialog.v2/0.26.1366.742@0.26.1366.742" timestamp="1600451444217" />
     <state x="408" y="171" width="542" height="446" key="refactoring.ChangeSignatureDialog" timestamp="1600442603140">
       <screen x="0" y="26" width="1366" height="742" />
     </state>
