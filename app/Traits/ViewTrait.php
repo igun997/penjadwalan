@@ -4,9 +4,9 @@ namespace App\Traits;
 
 trait ViewTrait
 {
-    public string $base;
+    public $base;
 
-    public function loadView(string $view,array $data = [])
+    public function loadView($view,$data = [])
     {
         return view($this->base.".".$view,$data);
     }
