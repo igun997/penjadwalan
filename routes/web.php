@@ -99,6 +99,18 @@ Route::prefix("pembimbing")->middleware("gateway:1")->name("pembimbing.")->names
     Route::get("/delete/{id}","Pembimbing@delete")->name("delete");
 });
 
+Route::prefix("penguji")->middleware("gateway:1")->name("penguji.")->namespace("Pembimbing")->group(function (){
+    Route::get("/","Penguji@index")->name("list");
+
+    Route::get("/add","Penguji@add")->name("add");
+    Route::post("/add","Penguji@add_action")->name("add.action");
+
+    Route::get("/update/{id}","Penguji@update")->name("update");
+    Route::post("/update/{id}","Penguji@update_action")->name("update.action");
+
+    Route::get("/delete/{id}","Penguji@delete")->name("delete");
+});
+
 Route::prefix("seminar")->middleware("gateway:1")->name("seminar.")->namespace("Penjadwalan")->group(function (){
     Route::get("/","Penjadwalan@index")->name("list");
 
