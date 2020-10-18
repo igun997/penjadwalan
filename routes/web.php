@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get("/","Auth@index")->name("login");
 Route::post("/login","Auth@login")->name("login.post");
 Route::get("/logout","Auth@logout")->name("login");
+Route::get("/template/ruangan","Utility@excel_template_ruangan")->name("template.ruangan");
 
 Route::get("/dahsboard","Dashboard@index")->middleware("gateway:0|1|2")->name("dashboard");
 //Admin

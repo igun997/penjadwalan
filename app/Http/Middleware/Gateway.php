@@ -86,6 +86,11 @@ class Gateway
                             "icon"=>"fa fa-users"
                         ]);
                         $e->menu->add([
+                            "text"=>"Dosen Penguji",
+                            "url"=>"penguji",
+                            "icon"=>"fa fa-users"
+                        ]);
+                        $e->menu->add([
                             "text"=>"Laporan",
                             "url"=>"cetak",
                             "icon"=>"fa fa-file"

@@ -20,20 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="657272b6-7b91-4bd1-ae69-0181d8c7e683" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Console/Commands/ContractMakeCommand.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Console/Commands/stubs/contract.stub" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Contracts/CRUDContract.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Contracts/ControllerContract.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Master/Ruangan.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/master/ruangan/form.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/master/ruangan/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Utility.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Gateway.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Gateway.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/msg.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/msg.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/master/ruangan/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/master/ruangan/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -181,6 +172,7 @@
       <path value="$PROJECT_DIR$/vendor/league/mime-type-detection" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php70" />
       <path value="$PROJECT_DIR$/vendor/igun997/utility" />
+      <path value="$PROJECT_DIR$/vendor/salmanzafar/laravel-crud-generator" />
     </include_path>
   </component>
   <component name="ProjectId" id="1hgh5PntPyzF3g3mySKFzMPsgIM" />
@@ -203,6 +195,11 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="DEFAULT" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Http/Controllers/Master" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
@@ -221,7 +218,10 @@
       <updated>1600438458422</updated>
       <workItem from="1600438461126" duration="11094000" />
       <workItem from="1600451402586" duration="6380000" />
-      <workItem from="1600520402698" duration="901000" />
+      <workItem from="1600520402698" duration="1645000" />
+      <workItem from="1600589972548" duration="23000" />
+      <workItem from="1601126136461" duration="2990000" />
+      <workItem from="1603007878531" duration="1352000" />
     </task>
     <task id="LOCAL-00001" summary="Mapping">
       <created>1600451435694</created>
@@ -230,7 +230,21 @@
       <option name="project" value="LOCAL" />
       <updated>1600451435694</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Master Ruangan">
+      <created>1600521396619</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1600521396619</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Trait Construct">
+      <created>1601126197368</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1601126197368</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,7 +265,9 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Mapping" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mapping" />
+    <MESSAGE value="Master Ruangan" />
+    <MESSAGE value="Trait Construct" />
+    <option name="LAST_COMMIT_MESSAGE" value="Trait Construct" />
   </component>
   <component name="WindowStateProjectService">
     <state x="430" y="202" width="523" height="385" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600443393611">
@@ -262,10 +278,14 @@
       <screen x="0" y="26" width="1366" height="742" />
     </state>
     <state x="487" y="82" width="383" height="615" key="#com.intellij.ide.util.MemberChooser/0.26.1366.742@0.26.1366.742" timestamp="1600458376686" />
-    <state x="278" y="133" width="802" height="523" key="Vcs.Push.Dialog.v2" timestamp="1600451444217">
+    <state x="416" y="155" width="526" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603009010733">
       <screen x="0" y="26" width="1366" height="742" />
     </state>
-    <state x="278" y="133" width="802" height="523" key="Vcs.Push.Dialog.v2/0.26.1366.742@0.26.1366.742" timestamp="1600451444217" />
+    <state x="416" y="155" width="526" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.26.1366.742@0.26.1366.742" timestamp="1603009010733" />
+    <state x="278" y="133" width="802" height="523" key="Vcs.Push.Dialog.v2" timestamp="1601126201220">
+      <screen x="0" y="26" width="1366" height="742" />
+    </state>
+    <state x="278" y="133" width="802" height="523" key="Vcs.Push.Dialog.v2/0.26.1366.742@0.26.1366.742" timestamp="1601126201220" />
     <state x="408" y="171" width="542" height="446" key="refactoring.ChangeSignatureDialog" timestamp="1600442603140">
       <screen x="0" y="26" width="1366" height="742" />
     </state>

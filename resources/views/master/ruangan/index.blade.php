@@ -20,6 +20,9 @@
                     <button id="import" type="button" class="btn btn-primary ml-2 mb-4">
                         <li class="fa fa-upload"></li> Upload via Excel
                     </button>
+                    <a href="{{route("template.ruangan")}}" class="btn btn-primary ml-2 mb-4">
+                        <li class="fa fa-download"></li> Template Excel
+                    </a>
                     <div class="table-responsive">
                         <table id="ruangan" class="table table-bordered">
                             <thead>
