@@ -24,6 +24,22 @@
                             <input type="text" class="form-control" name="name"  value="{{@$data->name}}" required>
                         </div>
                         <div class="form-group">
+                            <label>Kelas</label>
+                            <select name="kelas" class="form-control kelas" >
+                                @if(isset($data->kelas) && @$data->kelas)
+                                    <option value="{{$data->kelas}}" selected>{{$data->kelas}}</option>
+                                @endif
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Semester</label>
+                            <select name="semester" class="form-control semester" >
+                                @if(isset($data->semester) && @$data->semester)
+                                    <option value="{{$data->semester}}" selected>{{$data->semester}}</option>
+                                @endif
+                            </select>
+                        </div>
+                        <div class="form-group">
                             <button class="btn btn-primary btn-block btn-lg">Simpan Data</button>
                         </div>
                     </form>
@@ -40,6 +56,13 @@
 @section("js")
     @include("msg")
     <script>
-
+        $(".kelas").select2({
+            tags: true,
+            data:{!! json_encode(\App\Models\User::select("kelas as _id","kelas as text")->whereRaw("users.kelas IS NOT NULL")->get()) !!}
+        });
+        $(".semester").select2({
+            tags: true,
+            data:{!! json_encode(\App\Models\User::select("semester as _id","semester as text")->whereRaw("users.semester IS NOT NULL")->get()) !!}
+        });
     </script>
 @stop

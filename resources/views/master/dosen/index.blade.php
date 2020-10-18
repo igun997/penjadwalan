@@ -8,7 +8,7 @@
 
 @section('content')
     <div class="row">
-        <div class="col-8 offset-2">
+        <div class="col-12">
             <div class="card">
                 <div class="card-header">
                     <div class="card-title">{{((isset($title))?$title:"")}}</div>
@@ -30,6 +30,7 @@
                                     <th>No</th>
                                     <th>NIP</th>
                                     <th>Nama</th>
+                                    <th>Kelas / Semester</th>
                                     <th>Dibuat</th>
                                     <th>Diubah</th>
                                     <th>Aksi</th>
@@ -41,6 +42,11 @@
                                         <td>{{($num+1)}}</td>
                                         <td>{{$row->nip}}</td>
                                         <td>{{$row->name}}</td>
+                                        @if($row->semester && $row->kelas)
+                                        <td>{{$row->kelas}} / {{$row->semester}}</td>
+                                        @else
+                                        <td align="center">Bukan Dosen Wali</td>
+                                        @endif
                                         <td>{{$row->created_at->format("d-m-Y")}}</td>
                                         <td>{{$row->updated_at->format("d-m-Y")}}</td>
                                         <td>

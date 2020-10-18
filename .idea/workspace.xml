@@ -21,12 +21,13 @@
   <component name="ChangeListManager">
     <list default="true" id="657272b6-7b91-4bd1-ae69-0181d8c7e683" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Master/Mahasiswa.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Master/Mahasiswa.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Master/Dosen.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Master/Dosen.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Utility.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Utility.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Gateway.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Gateway.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/master/dosen/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/master/dosen/form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/master/dosen/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/master/dosen/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/master/mahasiswa/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/master/mahasiswa/form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/master/mahasiswa/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/master/mahasiswa/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,7 +227,7 @@
       <workItem from="1600520402698" duration="1645000" />
       <workItem from="1600589972548" duration="23000" />
       <workItem from="1601126136461" duration="2990000" />
-      <workItem from="1603007878531" duration="7795000" />
+      <workItem from="1603007878531" duration="9685000" />
     </task>
     <task id="LOCAL-00001" summary="Mapping">
       <created>1600451435694</created>
@@ -277,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603014004049</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Master Mahasiswa Complete">
+      <created>1603016772142</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1603016772142</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,7 +312,8 @@
     <MESSAGE value="Dosen &amp; Mahasiswa" />
     <MESSAGE value="Hotfix Data" />
     <MESSAGE value="Sekretariat" />
-    <option name="LAST_COMMIT_MESSAGE" value="Sekretariat" />
+    <MESSAGE value="Master Mahasiswa Complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="Master Mahasiswa Complete" />
   </component>
   <component name="WindowStateProjectService">
     <state x="430" y="202" width="523" height="385" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600443393611">
@@ -319,10 +328,10 @@
       <screen x="0" y="26" width="1366" height="742" />
     </state>
     <state x="416" y="155" width="526" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.26.1366.742@0.26.1366.742" timestamp="1603013050901" />
-    <state x="278" y="133" width="802" height="523" key="Vcs.Push.Dialog.v2" timestamp="1603009391879">
+    <state x="278" y="133" width="802" height="523" key="Vcs.Push.Dialog.v2" timestamp="1603016774350">
       <screen x="0" y="26" width="1366" height="742" />
     </state>
-    <state x="278" y="133" width="802" height="523" key="Vcs.Push.Dialog.v2/0.26.1366.742@0.26.1366.742" timestamp="1603009391879" />
+    <state x="278" y="133" width="802" height="523" key="Vcs.Push.Dialog.v2/0.26.1366.742@0.26.1366.742" timestamp="1603016774350" />
     <state x="408" y="171" width="542" height="446" key="refactoring.ChangeSignatureDialog" timestamp="1600442603140">
       <screen x="0" y="26" width="1366" height="742" />
     </state>

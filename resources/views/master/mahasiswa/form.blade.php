@@ -69,11 +69,11 @@
     <script>
         $(".kelas").select2({
             tags: true,
-            data:{!! json_encode(\App\Models\User::select("kelas as id","kelas as text")->whereRaw("users.kelas IS NOT NULL")->get()) !!}
+            data:{!! json_encode(\App\Models\User::select("kelas as _id","kelas as text")->whereRaw("users.kelas IS NOT NULL")->get()) !!}
         });
         $(".semester").select2({
             tags: true,
-            data:{!! json_encode(\App\Models\User::select("semester as id","semester as text")->whereRaw("users.semester IS NOT NULL")->get()) !!}
+            data:{!! json_encode(\App\Models\User::select("semester as _id","semester as text")->whereRaw("users.semester IS NOT NULL")->get()) !!}
         });
     </script>
 @stop

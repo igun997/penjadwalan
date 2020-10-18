@@ -23,7 +23,7 @@ Route::prefix("/template")->name("template.")->group(function (){
     Route::get("/sekretariat","Utility@excel_template_sekretariat")->name("sekretariat");
 });
 
-Route::get("/dahsboard","Dashboard@index")->middleware("gateway:0|1|2")->name("dashboard");
+Route::get("/dashboard","Dashboard@index")->middleware("gateway:0|1|2")->name("dashboard");
 //Admin
 Route::prefix("master")->middleware("gateway:0")->name("master.")->namespace("Master")->group(function(){
     Route::prefix("ruangan")->name("ruangan.")->group(function (){

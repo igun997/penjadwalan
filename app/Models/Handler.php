@@ -34,6 +34,8 @@ class Handler extends Model
 
 	protected $fillable = [
 		'nip',
+		'kelas',
+		'semester',
 		'name'
 	];
 

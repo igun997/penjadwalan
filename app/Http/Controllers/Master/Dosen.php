@@ -54,6 +54,8 @@ class Dosen extends Controller
             $req->validate([
                 "nip"=>"required|unique:handlers,nip",
                 "name"=>"required",
+                "kelas"=>"min:1",
+                "semester"=>"min:1",
             ]);
             $create = Handler::create($req->all());
         }else{
@@ -65,6 +67,8 @@ class Dosen extends Controller
             $format = [
                 "nip"=>"nip",
                 "nama"=>"nama",
+                "kelas"=>"kelas",
+                "semester"=>"semester",
             ];
             $result_excel = $excel->type("array")->setLabel(1)->reformat($format)->output();
             $unique = [];
@@ -131,6 +135,10 @@ class Dosen extends Controller
 
         $dosen = Handler::findOrFail($id);
         $dosen->name = $req->name;
+        if($req->has("semester") && $req->has("kelas")){
+            $dosen->kelas = $req->kelas;
+            $dosen->semester = $req->semester;
+        }
         if ($req->has("nip")){
             $dosen->nip = $req->nip;
         }

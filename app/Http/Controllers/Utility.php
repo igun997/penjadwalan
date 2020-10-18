@@ -30,6 +30,9 @@ class Utility extends Controller
         $template = [
             "A1"=>"nip",
             "B1"=>"nama",
+            "C1"=>"kelas",
+            "D1"=>"semester",
+            "E1"=>"* Jika Tidak Memiliki Kelas & Semester isi Dengan dash '-'",
         ];
         $excel = new Excel();
         try {
@@ -71,7 +74,7 @@ class Utility extends Controller
             "A1"=>"nim",
             "B1"=>"nama",
             "C1"=>"kelas",
-            "D1"=>"semster",
+            "D1"=>"semester",
             "E1"=>"password",
         ];
         $excel = new Excel();
