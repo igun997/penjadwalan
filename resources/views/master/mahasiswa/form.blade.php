@@ -17,7 +17,7 @@
                     <form action="{{$route}}" method="post">
                         <div class="form-group">
                             <label>NIM</label>
-                            <input type="number" class="form-control" name="nip" {{(isset($data->username))?"disabled":""}} value="{{@$data->username}}" required>
+                            <input type="number" class="form-control" name="username" {{(isset($data->username))?"disabled":""}} value="{{@$data->username}}" required>
                         </div>
                         <div class="form-group">
                             <label>Nama Mahasiswa</label>

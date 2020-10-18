@@ -20,15 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="657272b6-7b91-4bd1-ae69-0181d8c7e683" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Casts/ScheduleHandlerType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Master/Dosen.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Master/Mahasiswa.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/master/dosen/form.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/master/dosen/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/master/mahasiswa/form.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/master/mahasiswa/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Master/Mahasiswa.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Master/Mahasiswa.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Utility.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Utility.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/master/mahasiswa/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/master/mahasiswa/form.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -229,7 +224,7 @@
       <workItem from="1600520402698" duration="1645000" />
       <workItem from="1600589972548" duration="23000" />
       <workItem from="1601126136461" duration="2990000" />
-      <workItem from="1603007878531" duration="4357000" />
+      <workItem from="1603007878531" duration="4902000" />
     </task>
     <task id="LOCAL-00001" summary="Mapping">
       <created>1600451435694</created>
@@ -259,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603009388565</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Dosen &amp; Mahasiswa">
+      <created>1603012326098</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1603012326098</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,7 +285,8 @@
     <MESSAGE value="Master Ruangan" />
     <MESSAGE value="Trait Construct" />
     <MESSAGE value="Add / Update Ruangan" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add / Update Ruangan" />
+    <MESSAGE value="Dosen &amp; Mahasiswa" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dosen &amp; Mahasiswa" />
   </component>
   <component name="WindowStateProjectService">
     <state x="430" y="202" width="523" height="385" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600443393611">

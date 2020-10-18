@@ -53,7 +53,7 @@ class Mahasiswa extends Controller
     {
         if (!$req->has("file")){
             $req->validate([
-                "username"=>"required|unique:Users,username",
+                "username"=>"required|unique:users,username",
                 "name"=>"required",
                 "password"=>"required",
             ]);
@@ -70,6 +70,7 @@ class Mahasiswa extends Controller
             $format = [
                 "nim"=>"nim",
                 "nama"=>"nama",
+                "password"=>"password",
             ];
             $result_excel = $excel->type("array")->setLabel(1)->reformat($format)->output();
             $unique = [];
@@ -77,11 +78,13 @@ class Mahasiswa extends Controller
                 if ($item["nim"] !== null){
                     $item["name"] = $item["nama"];
                     $item["username"] = $item["nim"];
-                    $item["password"] = $item["nim"];
+                    if (!$item["password"]){
+                        $item["password"] = $item["nim"];
+                    }
                     $unique[] = $item;
                 }
             }
-            $uniques = array_unique($unique);
+            $uniques = array_map("unserialize", array_unique(array_map("serialize", $unique)));
             $itemSave = [];
             foreach ($uniques as $index => $unique) {
                 $find = User::where(["username"=>$unique["nim"]])->count();
