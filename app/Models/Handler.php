@@ -16,6 +16,8 @@ use Illuminate\Database\Eloquent\Model;
  * @property int $id
  * @property int $nip
  * @property string $name
+ * @property string|null $kelas
+ * @property string|null $semester
  * @property Carbon $created_at
  * @property Carbon $updated_at
  * 
@@ -34,15 +36,23 @@ class Handler extends Model
 
 	protected $fillable = [
 		'nip',
+		'name',
 		'kelas',
-		'semester',
-		'name'
+		'semester'
 	];
 
-	public function schedules()
+	public function handler_3()
 	{
 		return $this->hasMany(Schedule::class, 'handler_3');
 	}
+    public function handler_2()
+    {
+        return $this->hasMany(Schedule::class, 'handler_2');
+    }
+    public function handler_1()
+    {
+        return $this->hasMany(Schedule::class, 'handler_1');
+    }
 
 	public function supervisors()
 	{

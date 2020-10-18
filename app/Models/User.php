@@ -17,6 +17,8 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $name
  * @property string $username
  * @property string $password
+ * @property string|null $kelas
+ * @property string|null $semester
  * @property int $level
  * @property int $status
  * @property Carbon $created_at

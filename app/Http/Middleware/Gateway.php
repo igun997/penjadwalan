@@ -81,16 +81,6 @@ class Gateway
                             "icon"=>"fa fa-calendar"
                         ]);
                         $e->menu->add([
-                            "text"=>"Dosen Pembimbing",
-                            "url"=>"pembimbing",
-                            "icon"=>"fa fa-users"
-                        ]);
-                        $e->menu->add([
-                            "text"=>"Dosen Penguji",
-                            "url"=>"penguji",
-                            "icon"=>"fa fa-users"
-                        ]);
-                        $e->menu->add([
                             "text"=>"Laporan",
                             "url"=>"cetak",
                             "icon"=>"fa fa-file"

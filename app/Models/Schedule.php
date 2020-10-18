@@ -18,8 +18,9 @@ use Illuminate\Database\Eloquent\Model;
  * @property int $handler_2
  * @property int $handler_3
  * @property int $user_id
- * @property Carbon|null $start
- * @property Carbon|null $end
+ * @property Carbon|null $start_date
+ * @property Carbon|null $start_time
+ * @property Carbon|null $end_time
  * @property int $type
  * @property int $status
  * @property Carbon $created_at
@@ -42,12 +43,14 @@ class Schedule extends Model
 		'handler_3' => 'int',
 		'user_id' => 'int',
 		'type' => 'int',
+		'end_time' => 'date',
 		'status' => 'int'
 	];
 
 	protected $dates = [
-		'start',
-		'end'
+		'start_date',
+		'start_time',
+		'end_time'
 	];
 
 	protected $fillable = [
@@ -56,8 +59,9 @@ class Schedule extends Model
 		'handler_2',
 		'handler_3',
 		'user_id',
-		'start',
-		'end',
+		'start_date',
+		'start_time',
+		'end_time',
 		'type',
 		'status'
 	];
@@ -71,16 +75,17 @@ class Schedule extends Model
 	{
 		return $this->belongsTo(Room::class);
 	}
-    public function handler_1()
-    {
-        return $this->belongsTo(Handler::class, 'handler_1');
-    }
+
+	public function handler_1()
+	{
+		return $this->belongsTo(Handler::class, 'handler_1');
+	}
     public function handler_2()
     {
         return $this->belongsTo(Handler::class, 'handler_2');
     }
-	public function handler_3()
-	{
-		return $this->belongsTo(Handler::class, 'handler_3');
-	}
+    public function handler_3()
+    {
+        return $this->belongsTo(Handler::class, 'handler_3');
+    }
 }
