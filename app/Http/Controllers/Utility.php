@@ -70,7 +70,9 @@ class Utility extends Controller
         $template = [
             "A1"=>"nim",
             "B1"=>"nama",
-            "C1"=>"password",
+            "C1"=>"kelas",
+            "D1"=>"semster",
+            "E1"=>"password",
         ];
         $excel = new Excel();
         try {

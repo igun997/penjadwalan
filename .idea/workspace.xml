@@ -20,11 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="657272b6-7b91-4bd1-ae69-0181d8c7e683" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Master/Sekretariat.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/master/sekretariat/form.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/master/sekretariat/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Master/Mahasiswa.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Master/Mahasiswa.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Utility.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Utility.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Gateway.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Gateway.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/master/mahasiswa/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/master/mahasiswa/form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/master/mahasiswa/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/master/mahasiswa/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,7 +226,7 @@
       <workItem from="1600520402698" duration="1645000" />
       <workItem from="1600589972548" duration="23000" />
       <workItem from="1601126136461" duration="2990000" />
-      <workItem from="1603007878531" duration="5566000" />
+      <workItem from="1603007878531" duration="7795000" />
     </task>
     <task id="LOCAL-00001" summary="Mapping">
       <created>1600451435694</created>
@@ -268,7 +270,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603012880538</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Sekretariat">
+      <created>1603014004049</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1603014004049</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,7 +303,8 @@
     <MESSAGE value="Add / Update Ruangan" />
     <MESSAGE value="Dosen &amp; Mahasiswa" />
     <MESSAGE value="Hotfix Data" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hotfix Data" />
+    <MESSAGE value="Sekretariat" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sekretariat" />
   </component>
   <component name="WindowStateProjectService">
     <state x="430" y="202" width="523" height="385" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600443393611">

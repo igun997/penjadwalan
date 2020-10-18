@@ -55,9 +55,13 @@ class Mahasiswa extends Controller
             $req->validate([
                 "username"=>"required|unique:users,username",
                 "name"=>"required",
+                "kelas"=>"required",
+                "semester"=>"required",
                 "password"=>"required",
             ]);
             $data = $req->all();
+            $data["kelas"] = strtoupper($data["kelas"]);
+            $data["semester"] = strtoupper($data["semester"]);
             $data["status"] = StatusAccount::ACTIVE;
             $data["level"] = LevelAccount::MAHASISWA;
             $create = User::create($data);
@@ -70,12 +74,14 @@ class Mahasiswa extends Controller
             $format = [
                 "nim"=>"nim",
                 "nama"=>"nama",
+                "kelas"=>"kelas",
+                "semester"=>"semester",
                 "password"=>"password",
             ];
             $result_excel = $excel->type("array")->setLabel(1)->reformat($format)->output();
             $unique = [];
             foreach ($result_excel as $index => $item) {
-                if ($item["nim"] !== null){
+                if ($item["nim"] !== null && $item["semester"] !== null && $item["kelas"] !== null){
                     $item["name"] = $item["nama"];
                     $item["username"] = $item["nim"];
                     if (!$item["password"]){
@@ -147,6 +153,8 @@ class Mahasiswa extends Controller
         $Mahasiswa = User::findOrFail($id);
         $Mahasiswa->name = $req->name;
         $Mahasiswa->status = $req->status;
+        $Mahasiswa->kelas = $req->kelas;
+        $Mahasiswa->semester = $req->semester;
         if ($req->has("password")){
             $Mahasiswa->password = $req->password;
         }

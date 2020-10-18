@@ -44,6 +44,8 @@ class User extends Model
 		'name',
 		'username',
 		'password',
+		'kelas',
+		'semester',
 		'level',
 		'status'
 	];

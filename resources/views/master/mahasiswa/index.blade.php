@@ -30,6 +30,7 @@
                                     <th>No</th>
                                     <th>NIM</th>
                                     <th>Nama</th>
+                                    <th>Kelas / Semester</th>
                                     <th>Status</th>
                                     <th>Dibuat</th>
                                     <th>Diubah</th>
@@ -42,6 +43,11 @@
                                         <td>{{($num+1)}}</td>
                                         <td>{{$row->username}}</td>
                                         <td>{{$row->name}}</td>
+                                        @if($row->kelas && $row->semester)
+                                        <td>{{$row->kelas}} / {{$row->semester}}</td>
+                                        @else
+                                        <td align="center">Kelas Tidak Terdefinisi</td>
+                                        @endif
                                         <td>{{\App\Casts\StatusAccount::lang($row->status)}}</td>
                                         <td>{{$row->created_at->format("d-m-Y")}}</td>
                                         <td>{{$row->updated_at->format("d-m-Y")}}</td>

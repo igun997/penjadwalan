@@ -61,11 +61,11 @@ class Gateway
                             "url"=>"master/sekretariat",
                             "icon"=>"fa fa-file"
                         ]);
-                        $e->menu->add([
-                            "text"=>"Data Administrator",
-                            "url"=>"master/administrator",
-                            "icon"=>"fa fa-file"
-                        ]);
+//                        $e->menu->add([
+//                            "text"=>"Data Administrator",
+//                            "url"=>"master/administrator",
+//                            "icon"=>"fa fa-file"
+//                        ]);
 
                     });
                 }elseif ($level == 1){
