@@ -25,9 +25,20 @@ class Seminar extends Controller
     {
         $data = [
             "title"=>"Data Seminar",
-            "data"=>Schedule::select("status","start_date",DB::raw("COUNT(DISTINCT(room_id)) as total_ruangan"),DB::raw("COUNT(user_id) as total_partisipan"))->where(["type"=>ScheduleType::SEMINAR])->groupBy("start_date")->groupBy("status")->get()
+            "data"=>Schedule::select("status","start_date",DB::raw("COUNT(DISTINCT(room_id)) as total_ruangan"),DB::raw("COUNT(user_id) as total_partisipan"))->where(["type"=>ScheduleType::SEMINAR])->groupBy("start_date")->get()
         ];
         return  $this->loadView("index",$data);
+    }
+
+    public function view(Request $req)
+    {
+        $req->validate([
+            "date"=>"required"
+        ]);
+        $title = "Detail Data Seminar ($req->date)";
+        $data = Schedule::where("start_date",$req->date)->orderBy("start_time","ASC")->get();
+        return $this->loadView("viewForm",compact("title",'data'));
+
     }
 
     /**

@@ -43,14 +43,11 @@ class Schedule extends Model
 		'handler_3' => 'int',
 		'user_id' => 'int',
 		'type' => 'int',
-		'end_time' => 'date',
 		'status' => 'int'
 	];
 
 	protected $dates = [
-		'start_date',
-		'start_time',
-		'end_time'
+		'start_date'
 	];
 
 	protected $fillable = [
@@ -76,15 +73,15 @@ class Schedule extends Model
 		return $this->belongsTo(Room::class);
 	}
 
-	public function handler_1()
+	public function pembimbing()
 	{
 		return $this->belongsTo(Handler::class, 'handler_1');
 	}
-    public function handler_2()
+    public function penguji_satu()
     {
         return $this->belongsTo(Handler::class, 'handler_2');
     }
-    public function handler_3()
+    public function penguji_dua()
     {
         return $this->belongsTo(Handler::class, 'handler_3');
     }

@@ -111,7 +111,7 @@ Route::prefix("seminar")->middleware("gateway:1")->name("seminar.")->namespace("
     Route::get("/update/{id}","Seminar@update")->name("update");
     Route::post("/update/{id}","Seminar@update_action")->name("update.action");
 
-    Route::get("/delete/{id}","Seminar@delete")->name("delete");
+    Route::get("/view","Seminar@view")->name("view");
 });
 
 
