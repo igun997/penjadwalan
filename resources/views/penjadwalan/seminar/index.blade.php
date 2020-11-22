@@ -31,7 +31,6 @@
                                 <th>Tgl</th>
                                 <th>Total Partisipan</th>
                                 <th>Total Ruangan</th>
-                                <th>Status</th>
                                 <th>Aksi</th>
                             </tr>
                             </thead>
@@ -42,7 +41,6 @@
                                     <td>{{$row->start_date->format("d/m/Y")}}</td>
                                     <td>{{number_format($row->total_partisipan)}} Orang</td>
                                     <td>{{number_format($row->total_ruangan)}} Ruangan</td>
-                                    <td>{{\App\Casts\ScheduleStatus::lang($row->status)}}</td>
                                     <td>
                                         <a href="" class="btn btn-primary m-2">
                                             <li class="fa fa-cogs"></li>
