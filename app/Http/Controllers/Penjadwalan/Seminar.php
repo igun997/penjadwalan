@@ -37,7 +37,7 @@ class Seminar extends Controller
         ]);
         $title = "Detail Data Seminar ($req->date)";
         $data = Schedule::where("start_date",$req->date)->orderBy("start_time","ASC")->get();
-        return $this->loadView("viewForm",compact("title",'data'));
+        return $this->loadView("viewForm",compact("title",'data','req'));
 
     }
 
