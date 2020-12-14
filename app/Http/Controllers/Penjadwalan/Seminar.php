@@ -2,9 +2,13 @@
 
 namespace App\Http\Controllers\Penjadwalan;
 
+use App\Casts\LevelAccount;
 use App\Casts\ScheduleType;
+use App\Casts\StatusAccount;
 use App\Http\Controllers\Controller;
+use App\Models\Handler;
 use App\Models\Schedule;
+use App\Models\User;
 use App\Traits\ViewTrait;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -46,8 +50,17 @@ class Seminar extends Controller
      */
     public function add()
     {
-
-
+        $title = "Tambah Seminar";
+        $data_mhs = User::where(["level"=>LevelAccount::MAHASISWA,"status"=>StatusAccount::ACTIVE])->get(["id","name","username","kelas","semester"]);
+        $data_dosen = Handler::all();
+        if (count($data_mhs->toArray()) > 0 ){
+            $data_mhs = json_encode($data_mhs->toArray());
+            $data_dosen = json_encode($data_dosen->toArray());
+        }else{
+            $data_mhs = null;
+            $data_dosen = null;
+        }
+        return  $this->loadView("form",compact("title","data_mhs","data_dosen"));
     }
 
     /**

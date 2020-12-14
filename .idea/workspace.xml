@@ -22,7 +22,7 @@
     <list default="true" id="657272b6-7b91-4bd1-ae69-0181d8c7e683" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Penjadwalan/Seminar.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Penjadwalan/Seminar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/penjadwalan/seminar/viewForm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/penjadwalan/seminar/viewForm.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/penjadwalan/seminar/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/penjadwalan/seminar/form.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +35,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
   </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
@@ -196,12 +199,12 @@
     <property name="php.override.implement.member.chooser.php.doc" value="DEFAULT" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Http/Controllers/Master" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/Http/Controllers" />
       <recent name="$PROJECT_DIR$/resources/views/master" />
-      <recent name="$PROJECT_DIR$/app/Http/Controllers/Master" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/Http/Controllers/Master" />
     </key>
   </component>
@@ -229,7 +232,10 @@
       <workItem from="1603007878531" duration="14481000" />
       <workItem from="1603025431630" duration="3017000" />
       <workItem from="1603092920043" duration="620000" />
-      <workItem from="1606005126142" duration="4132000" />
+      <workItem from="1606005126142" duration="4237000" />
+      <workItem from="1606055817514" duration="129000" />
+      <workItem from="1607862252252" duration="1406000" />
+      <workItem from="1607939233286" duration="3578000" />
     </task>
     <task id="LOCAL-00001" summary="Mapping">
       <created>1600451435694</created>
@@ -322,7 +328,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606034088417</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="filter Seminar.php">
+      <created>1606035511169</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1606035511169</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,7 +367,8 @@
     <MESSAGE value="New Migration" />
     <MESSAGE value="detail Seminar.php" />
     <MESSAGE value="update Seminar.php" />
-    <option name="LAST_COMMIT_MESSAGE" value="update Seminar.php" />
+    <MESSAGE value="filter Seminar.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="filter Seminar.php" />
   </component>
   <component name="WindowStateProjectService">
     <state x="430" y="202" width="523" height="385" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600443393611">
@@ -373,10 +387,10 @@
       <screen x="0" y="26" width="1366" height="742" />
     </state>
     <state x="466" y="155" width="426" height="479" key="FileChooserDialogImpl/0.26.1366.742@0.26.1366.742" timestamp="1603018166508" />
-    <state x="278" y="133" width="802" height="523" key="Vcs.Push.Dialog.v2" timestamp="1606034090605">
+    <state x="278" y="133" width="802" height="523" key="Vcs.Push.Dialog.v2" timestamp="1606035514903">
       <screen x="0" y="26" width="1366" height="742" />
     </state>
-    <state x="278" y="133" width="802" height="523" key="Vcs.Push.Dialog.v2/0.26.1366.742@0.26.1366.742" timestamp="1606034090605" />
+    <state x="278" y="133" width="802" height="523" key="Vcs.Push.Dialog.v2/0.26.1366.742@0.26.1366.742" timestamp="1606035514903" />
     <state x="408" y="171" width="542" height="446" key="refactoring.ChangeSignatureDialog" timestamp="1600442603140">
       <screen x="0" y="26" width="1366" height="742" />
     </state>
