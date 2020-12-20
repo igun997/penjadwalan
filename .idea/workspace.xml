@@ -20,15 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="657272b6-7b91-4bd1-ae69-0181d8c7e683" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Casts/ScheduleStatus.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Casts/ScheduleStatus.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Casts/ScheduleType.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Casts/ScheduleType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Penjadwalan/Seminar.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Penjadwalan/Seminar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_18_125558_create_handlers_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_18_125558_create_handlers_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/penjadwalan/seminar/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/penjadwalan/seminar/form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/penjadwalan/seminar/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/penjadwalan/seminar/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Gateway.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Gateway.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/penjadwalan/seminar/setHandler.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/penjadwalan/seminar/setPartisipant.blade.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -247,7 +242,7 @@
       <workItem from="1607939233286" duration="3578000" />
       <workItem from="1608481940622" duration="33000" />
       <workItem from="1608481977494" duration="1032000" />
-      <workItem from="1608483863920" duration="5804000" />
+      <workItem from="1608483863920" duration="7094000" />
     </task>
     <task id="LOCAL-00001" summary="Mapping">
       <created>1600451435694</created>

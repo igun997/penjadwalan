@@ -94,10 +94,19 @@ class Gateway
                             "url"=>"jadwal?type=".ScheduleType::SEMINAR,
                             "icon"=>"fa fa-calendar"
                         ]);
-
                         $e->menu->add([
-                            "text"=>"Jadwal Sidang",
-                            "url"=>"jadwal?type=".ScheduleType::SIDANG,
+                            "text"=>"Jadwal Sidang USULAN",
+                            "url"=>"jadwal?type=".ScheduleType::SIDANG_USULAN,
+                            "icon"=>"fa fa-calendar"
+                        ]);
+                        $e->menu->add([
+                            "text"=>"Jadwal Sidang Komprehensif",
+                            "url"=>"jadwal?type=".ScheduleType::SIDANG_KOMPREHENSIF,
+                            "icon"=>"fa fa-calendar"
+                        ]);
+                        $e->menu->add([
+                            "text"=>"Jadwal Sidang Akhir",
+                            "url"=>"jadwal?type=".ScheduleType::SIDANG_AKHIR,
                             "icon"=>"fa fa-calendar"
                         ]);
 
