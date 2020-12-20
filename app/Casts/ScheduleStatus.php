@@ -10,9 +10,13 @@ class ScheduleStatus implements CastsAttributes
     const ONGOING = 1;
     const COMPLETED = 2;
     const GRADUATE_SEMINAR = 3;
-    const GRADUATE_SIDANG = 4;
-    const UNGRADUATE_SIDANG = 5;
-    const UNGRADUATE_SEMINAR = 6;
+    const GRADUATE_SIDANG_AKHIR = 4;
+    const GRADUATE_SIDANG_KOMPREHENSIF = 5;
+    const GRADUATE_SIDANG_USULAN = 6;
+    const UNGRADUATE_SEMINAR = 7;
+    const UNGRADUATE_SIDANG_KOMPREHENSIF = 8;
+    const UNGRADUATE_SIDANG_USULAN = 9;
+    const UNGRADUATE_SIDANG_AKHIR = 10;
 
     /**
      * Cast the given value.
@@ -43,18 +47,26 @@ class ScheduleStatus implements CastsAttributes
     }
     public static function lang($level)
     {
-        if ($level == ScheduleStatus::CREATED){
+        if ($level == self::CREATED){
             return "Dibuat";
-        }elseif ($level == ScheduleStatus::ONGOING){
+        }elseif ($level == self::ONGOING){
             return "Dalam Proses";
-        }elseif ($level == ScheduleStatus::GRADUATE_SEMINAR){
+        }elseif ($level == self::GRADUATE_SEMINAR){
             return "Lulus Seminar";
-        }elseif ($level == ScheduleStatus::UNGRADUATE_SEMINAR){
+        }elseif ($level == self::GRADUATE_SIDANG_AKHIR){
+            return "Lulus Sidang Akhir";
+        }elseif ($level == self::GRADUATE_SIDANG_KOMPREHENSIF){
+            return "Lulus Sidang Komprehensif";
+        }elseif ($level == self::GRADUATE_SIDANG_USULAN){
+            return "Lulus Sidang Usulan";
+        }elseif ($level == self::UNGRADUATE_SEMINAR){
             return "Gagal Seminar";
-        }elseif ($level == ScheduleStatus::UNGRADUATE_SIDANG){
-            return "Gagal Sidang";
-        }elseif ($level == ScheduleStatus::GRADUATE_SIDANG){
-            return "Lulus Sidang";
+        }elseif ($level == self::UNGRADUATE_SIDANG_KOMPREHENSIF){
+            return "Gagal Sidang Komprehensif";
+        }elseif ($level == self::UNGRADUATE_SIDANG_USULAN){
+            return "Gagal Sidang Usulan";
+        }elseif ($level == self::UNGRADUATE_SIDANG_AKHIR){
+            return "Gagal Sidang Akhir";
         }else{
             return  FALSE;
         }

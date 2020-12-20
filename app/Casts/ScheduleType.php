@@ -6,7 +6,9 @@ use Illuminate\Contracts\Database\Eloquent\CastsAttributes;
 
 class ScheduleType implements CastsAttributes
 {
-    const SIDANG = 1;
+    const SIDANG_AKHIR = 3;
+    const SIDANG_USULAN = 1;
+    const SIDANG_KOMPREHENSIF = 2;
     const SEMINAR = 0;
 
     /**
@@ -38,10 +40,14 @@ class ScheduleType implements CastsAttributes
     }
     public static function lang($level)
     {
-        if ($level == ScheduleType::SEMINAR){
+        if ($level == self::SIDANG_KOMPREHENSIF){
+            return "Sidang Komprehensif";
+        }elseif ($level == self::SIDANG_USULAN){
+            return "Sidang Usulan Penelitian";
+        }elseif ($level == self::SIDANG_AKHIR){
+            return "Sidang Akhir";
+        }elseif ($level == self::SEMINAR){
             return "Seminar";
-        }elseif ($level == StatusAccount::SIDANG){
-            return "Sidang";
         }else{
             return  FALSE;
         }

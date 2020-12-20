@@ -15,7 +15,7 @@ class CreateHandlersTable extends Migration
     {
         Schema::create('handlers', function (Blueprint $table) {
             $table->integer('id', true);
-            $table->integer('nip');
+            $table->string('nip',100);
             $table->string('name', 100);
             $table->string('kelas', 10)->nullable()->index('kelas');
             $table->string('semester', 10)->nullable()->index('semester');

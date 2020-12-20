@@ -48,7 +48,7 @@
                                         <a href="{{route("seminar.view",["date"=>$row->start_date->format("Y-m-d")])}}" class="btn btn-primary m-2">
                                             <li class="fa fa-eye"></li>
                                         </a>
-                                        <a href="" class="btn btn-primary m-2">
+                                        <a href="{{route("seminar.update",[1,"date"=>$row->start_date->format("Y-m-d")])}}" class="btn btn-primary m-2">
                                             <li class="fa fa-users"></li>
                                         </a>
                                     </td>
