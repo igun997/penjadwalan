@@ -3,6 +3,7 @@
 namespace App\Http\Middleware;
 
 use App\Casts\ScheduleType;
+use App\Casts\StatusAccount;
 use Closure;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Event;
@@ -76,8 +77,18 @@ class Gateway
                             "icon"=>"fa fa-calendar"
                         ]);
                         $e->menu->add([
-                            "text"=>"Penjadwalan Sidang",
-                            "url"=>"sidang",
+                            "text"=>"Penjadwalan Sidang Usulan",
+                            "url"=>"sidang?type=".ScheduleType::SIDANG_USULAN,
+                            "icon"=>"fa fa-calendar"
+                        ]);
+                        $e->menu->add([
+                            "text"=>"Penjadwalan Sidang Komprehensif",
+                            "url"=>"sidang?type=".ScheduleType::SIDANG_KOMPREHENSIF,
+                            "icon"=>"fa fa-calendar"
+                        ]);
+                        $e->menu->add([
+                            "text"=>"Penjadwalan Sidang Akhir",
+                            "url"=>"sidang?type=".ScheduleType::SIDANG_AKHIR,
                             "icon"=>"fa fa-calendar"
                         ]);
                         $e->menu->add([
@@ -95,7 +106,7 @@ class Gateway
                             "icon"=>"fa fa-calendar"
                         ]);
                         $e->menu->add([
-                            "text"=>"Jadwal Sidang USULAN",
+                            "text"=>"Jadwal Sidang Usulan",
                             "url"=>"jadwal?type=".ScheduleType::SIDANG_USULAN,
                             "icon"=>"fa fa-calendar"
                         ]);
