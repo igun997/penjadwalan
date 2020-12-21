@@ -21,7 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="657272b6-7b91-4bd1-ae69-0181d8c7e683" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Gateway.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Gateway.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/master/mahasiswa/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/master/mahasiswa/form.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,7 +240,8 @@
       <workItem from="1607939233286" duration="3578000" />
       <workItem from="1608481940622" duration="33000" />
       <workItem from="1608481977494" duration="1032000" />
-      <workItem from="1608483863920" duration="7498000" />
+      <workItem from="1608483863920" duration="8137000" />
+      <workItem from="1608567528424" duration="60000" />
     </task>
     <task id="LOCAL-00001" summary="Mapping">
       <created>1600451435694</created>
@@ -347,7 +348,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608492166025</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="new gateway">
+      <created>1608492571446</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1608492571446</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -381,6 +389,7 @@
     <MESSAGE value="update Seminar.php" />
     <MESSAGE value="filter Seminar.php" />
     <MESSAGE value="up" />
-    <option name="LAST_COMMIT_MESSAGE" value="up" />
+    <MESSAGE value="new gateway" />
+    <option name="LAST_COMMIT_MESSAGE" value="new gateway" />
   </component>
 </project>
