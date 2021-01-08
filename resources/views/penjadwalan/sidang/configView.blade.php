@@ -45,7 +45,7 @@
                         </select>
                     </div>
                     <div class="table-responsive">
-                        <table id="seminar" class="table table-bordered">
+                        <table id="sidang" class="table table-bordered">
                             <thead>
                             <tr>
                                 <th>No</th>
@@ -70,14 +70,20 @@
                                     <td>{{(($row->penguji_satu)?$row->penguji_satu->name:"-")}}</td>
                                     <td>{{(($row->penguji_dua)?$row->penguji_dua->name:"-")}}</td>
                                     <td>{{(\App\Casts\ScheduleStatus::lang($row->status))}}</td>
-                                    @if(\App\Casts\ScheduleStatus::CREATED === $row->status)
+                                    @if(\App\Casts\ScheduleStatus::GRADUATE_SIDANG_KOMPREHENSIF === $row->status)
                                         <td>
-                                            <a href="{{route("seminar.config.update_status",["id"=>$row->id,"status"=>\App\Casts\ScheduleStatus::ONGOING])}}" class="btn btn-primary  btn-sm" onclick="return confirm('Apakah Anda Yakin ? ')"> Set : Dalam Proses</a>
+                                            <a href="{{route("sidang.config.update_status",["id"=>$row->id,"status"=>\App\Casts\ScheduleStatus::GRADUATE_SIDANG_AKHIR])}}" class="btn btn-success btn-sm m-2" onclick="return confirm('Apakah Anda Yakin ? ')">Set : {{\App\Casts\ScheduleStatus::lang(\App\Casts\ScheduleStatus::GRADUATE_SIDANG_AKHIR)}}</a>
+                                            <a href="{{route("sidang.config.update_status",["id"=>$row->id,"status"=>\App\Casts\ScheduleStatus::UNGRADUATE_SIDANG_AKHIR])}}" class="btn btn-danger btn-sm m-2" onclick="return confirm('Apakah Anda Yakin ? ')">Set : {{\App\Casts\ScheduleStatus::lang(\App\Casts\ScheduleStatus::UNGRADUATE_SIDANG_AKHIR)}}</a>
                                         </td>
-                                    @elseif(\App\Casts\ScheduleStatus::ONGOING === $row->status)
+                                        @elseif(\App\Casts\ScheduleStatus::GRADUATE_SEMINAR === $row->status)
+                                            <td>
+                                                <a href="{{route("sidang.config.update_status",["id"=>$row->id,"status"=>\App\Casts\ScheduleStatus::GRADUATE_SIDANG_USULAN])}}" class="btn btn-success btn-sm m-2" onclick="return confirm('Apakah Anda Yakin ? ')">Set : {{\App\Casts\ScheduleStatus::lang(\App\Casts\ScheduleStatus::GRADUATE_SIDANG_USULAN)}}</a>
+                                                <a href="{{route("sidang.config.update_status",["id"=>$row->id,"status"=>\App\Casts\ScheduleStatus::UNGRADUATE_SIDANG_USULAN])}}" class="btn btn-danger btn-sm m-2" onclick="return confirm('Apakah Anda Yakin ? ')">Set : {{\App\Casts\ScheduleStatus::lang(\App\Casts\ScheduleStatus::UNGRADUATE_SIDANG_USULAN)}}</a>
+                                            </td>
+                                    @elseif(\App\Casts\ScheduleStatus::GRADUATE_SIDANG_USULAN === $row->status)
                                         <td>
-                                            <a href="{{route("seminar.config.update_status",["id"=>$row->id,"status"=>\App\Casts\ScheduleStatus::GRADUATE_SEMINAR])}}" class="btn btn-success btn-sm m-2" onclick="return confirm('Apakah Anda Yakin ? ')">Set : Lulus Seminar</a>
-                                            <a href="{{route("seminar.config.update_status",["id"=>$row->id,"status"=>\App\Casts\ScheduleStatus::UNGRADUATE_SEMINAR])}}" class="btn btn-danger  btn-sm m-2" onclick="return confirm('Apakah Anda Yakin ? ')">Set : Gagal Seminar</a>
+                                            <a href="{{route("sidang.config.update_status",["id"=>$row->id,"status"=>\App\Casts\ScheduleStatus::GRADUATE_SIDANG_KOMPREHENSIF])}}" class="btn btn-success btn-sm m-2" onclick="return confirm('Apakah Anda Yakin ? ')">Set : {{\App\Casts\ScheduleStatus::lang(\App\Casts\ScheduleStatus::GRADUATE_SIDANG_KOMPREHENSIF)}}</a>
+                                            <a href="{{route("sidang.config.update_status",["id"=>$row->id,"status"=>\App\Casts\ScheduleStatus::GRADUATE_SIDANG_KOMPREHENSIF])}}" class="btn btn-danger btn-sm m-2" onclick="return confirm('Apakah Anda Yakin ? ')">Set : {{\App\Casts\ScheduleStatus::lang(\App\Casts\ScheduleStatus::GRADUATE_SIDANG_KOMPREHENSIF)}}</a>
                                         </td>
                                     @else
                                         <td>
@@ -104,7 +110,7 @@
     <script>
 
         $(document).ready(function () {
-            $("#seminar").DataTable();
+            $("#sidang").DataTable();
             $("#room").on("change",function () {
                 const v = parseInt($(this).val());
                 const c = "{{(explode("&",url()->current()))[0]}}";

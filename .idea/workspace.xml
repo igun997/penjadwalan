@@ -20,10 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="657272b6-7b91-4bd1-ae69-0181d8c7e683" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/penjadwalan/seminar/configView.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/penjadwalan/sidang/configView.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/penjadwalan/sidang/form.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/penjadwalan/sidang/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/penjadwalan/sidang/viewForm.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Penjadwalan/Seminar.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Penjadwalan/Seminar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/penjadwalan/seminar/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/penjadwalan/seminar/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Penjadwalan/Sidang.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Penjadwalan/Sidang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/penjadwalan/seminar/configView.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/penjadwalan/seminar/configView.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/penjadwalan/seminar/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/penjadwalan/seminar/form.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -193,7 +198,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/penjadwalan/seminar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/penjadwalan" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -204,6 +209,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/penjadwalan" />
       <recent name="$PROJECT_DIR$/resources/views/penjadwalan/seminar" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers" />
       <recent name="$PROJECT_DIR$/resources/views/master" />
@@ -246,7 +252,7 @@
       <workItem from="1608481977494" duration="1032000" />
       <workItem from="1608483863920" duration="8137000" />
       <workItem from="1608567528424" duration="60000" />
-      <workItem from="1610123628527" duration="993000" />
+      <workItem from="1610123628527" duration="5323000" />
     </task>
     <task id="LOCAL-00001" summary="Mapping">
       <created>1600451435694</created>
@@ -381,7 +387,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610124463750</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="fix init config layout">
+      <created>1610124761330</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1610124761330</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -419,6 +432,13 @@
     <MESSAGE value="fix sekretariat" />
     <MESSAGE value="fix sort" />
     <MESSAGE value="fix filter" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix filter" />
+    <MESSAGE value="fix init config layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix init config layout" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="416" y="155" width="526" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610129148221">
+      <screen x="0" y="26" width="1366" height="742" />
+    </state>
+    <state x="416" y="155" width="526" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.26.1366.742@0.26.1366.742" timestamp="1610129148221" />
   </component>
 </project>

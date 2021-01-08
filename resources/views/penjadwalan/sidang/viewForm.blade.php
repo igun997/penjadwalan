@@ -56,7 +56,6 @@
                                 <th>Penguji 1</th>
                                 <th>Penguji 2</th>
                                 <th>Status</th>
-                                <th>Aksi</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -70,20 +69,6 @@
                                     <td>{{(($row->penguji_satu)?$row->penguji_satu->name:"-")}}</td>
                                     <td>{{(($row->penguji_dua)?$row->penguji_dua->name:"-")}}</td>
                                     <td>{{(\App\Casts\ScheduleStatus::lang($row->status))}}</td>
-                                    @if(\App\Casts\ScheduleStatus::CREATED === $row->status)
-                                        <td>
-                                            <a href="{{route("seminar.config.update_status",["id"=>$row->id,"status"=>\App\Casts\ScheduleStatus::ONGOING])}}" class="btn btn-primary  btn-sm" onclick="return confirm('Apakah Anda Yakin ? ')"> Set : Dalam Proses</a>
-                                        </td>
-                                    @elseif(\App\Casts\ScheduleStatus::ONGOING === $row->status)
-                                        <td>
-                                            <a href="{{route("seminar.config.update_status",["id"=>$row->id,"status"=>\App\Casts\ScheduleStatus::GRADUATE_SEMINAR])}}" class="btn btn-success btn-sm m-2" onclick="return confirm('Apakah Anda Yakin ? ')">Set : Lulus Seminar</a>
-                                            <a href="{{route("seminar.config.update_status",["id"=>$row->id,"status"=>\App\Casts\ScheduleStatus::UNGRADUATE_SEMINAR])}}" class="btn btn-danger  btn-sm m-2" onclick="return confirm('Apakah Anda Yakin ? ')">Set : Gagal Seminar</a>
-                                        </td>
-                                    @else
-                                        <td>
-                                            -
-                                        </td>
-                                    @endif
                                 </tr>
                             @endforeach
                             </tbody>

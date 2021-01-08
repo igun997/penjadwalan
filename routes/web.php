@@ -22,6 +22,7 @@ Route::prefix("/template")->name("template.")->group(function (){
     Route::get("/mahasiswa","Utility@excel_template_mahasiswa")->name("mahasiswa");
     Route::get("/sekretariat","Utility@excel_template_sekretariat")->name("sekretariat");
     Route::get("/seminar","Utility@excel_template_seminar")->name("seminar");
+    Route::get("/sidang","Utility@excel_template_sidang")->name("sidang");
 });
 
 Route::get("/dashboard","Dashboard@index")->middleware("gateway:0|1|2")->name("dashboard");
@@ -115,6 +116,7 @@ Route::prefix("seminar")->middleware("gateway:1")->name("seminar.")->namespace("
 
     Route::get("/view","Seminar@view")->name("view");
     Route::get("/config","Seminar@configView")->name("view.config");
+    Route::get("/update_status","Seminar@updateStatus")->name("config.update_status");
 });
 
 
@@ -128,6 +130,10 @@ Route::prefix("sidang")->middleware("gateway:1")->name("sidang.")->namespace("Pe
     Route::post("/update/{id}","Sidang@update_action")->name("update.action");
 
     Route::get("/delete/{id}","Sidang@delete")->name("delete");
+
+    Route::get("/view","Sidang@view")->name("view");
+    Route::get("/config","Sidang@configView")->name("view.config");
+    Route::get("/update_status","Sidang@updateStatus")->name("config.update_status");
 });
 //Siswa
 Route::prefix("jadwal")->middleware("gateway:2")->namespace("Jadwal")->name("jadwal.")->group(function (){

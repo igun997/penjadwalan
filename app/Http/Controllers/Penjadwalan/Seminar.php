@@ -45,9 +45,9 @@ class Seminar extends Controller
         ]);
         $title = "Detail Data Seminar ($req->date)";
         if ($req->has("room_id")){
-            $data = Schedule::where("start_date",$req->date)->where("room_id",$req->room_id)->orderBy("room_id","DESC")->get();
+            $data = Schedule::where("start_date",$req->date)->where("type",ScheduleType::SEMINAR)->where("room_id",$req->room_id)->orderBy("room_id","DESC")->get();
         }else{
-            $data = Schedule::where("start_date",$req->date)->orderBy("room_id","DESC")->get();
+            $data = Schedule::where("start_date",$req->date)->where("type",ScheduleType::SEMINAR)->orderBy("room_id","DESC")->get();
         }
         return $this->loadView("viewForm",compact("title",'data','req'));
 
@@ -61,9 +61,9 @@ class Seminar extends Controller
         ]);
         $title = "Pengaturan Data Seminar ($req->date)";
         if ($req->has("room_id")){
-            $data = Schedule::where("start_date",$req->date)->where("room_id",$req->room_id)->orderBy("room_id","DESC")->get();
+            $data = Schedule::where("start_date",$req->date)->where("type",ScheduleType::SEMINAR)->where("room_id",$req->room_id)->orderBy("room_id","DESC")->get();
         }else{
-            $data = Schedule::where("start_date",$req->date)->orderBy("room_id","DESC")->get();
+            $data = Schedule::where("start_date",$req->date)->where("type",ScheduleType::SEMINAR)->orderBy("room_id","DESC")->get();
         }
         return $this->loadView("configView",compact("title",'data','req'));
     }
@@ -132,10 +132,15 @@ class Seminar extends Controller
     public function update(Request $req, $id)
     {
         $req->validate([
-            "date"=>"required"
+            "date"=>"required",
+            "room_id"=>"numeric"
         ]);
         $title = "Update Data Seminar ($req->date)";
-        $data = Schedule::where("start_date",$req->date)->orderBy("start_time","ASC")->get();
+        if ($req->has("room_id")){
+            $data = Schedule::where("start_date",$req->date)->where("type",ScheduleType::SEMINAR)->where("room_id",$req->room_id)->orderBy("room_id","ASC")->get();
+        }else{
+            $data = Schedule::where("start_date",$req->date)->where("type",ScheduleType::SEMINAR)->orderBy("room_id","ASC")->get();
+        }
         $data_mhs = User::where(["level"=>LevelAccount::MAHASISWA,"status"=>StatusAccount::ACTIVE])->get(["id","name","username","kelas","semester"]);
         $data_dosen = Handler::all();
         $data_ruangan = Room::all();
@@ -179,6 +184,24 @@ class Seminar extends Controller
     public function delete($id)
     {
         Schedule::findOrFail($id)->delete();
+        return $this->successBack(false);
+    }
+
+    public function updateStatus(Request $req)
+    {
+        $req->validate([
+            "id"=>"required",
+            "status"=>"numeric|required"
+        ]);
+        if ($req->status == ScheduleStatus::GRADUATE_SEMINAR){
+            Schedule::where(["id"=>$req->id])->update(["type"=>ScheduleType::SIDANG_USULAN,"status"=>$req->status]);
+        }elseif($req->status == ScheduleStatus::GRADUATE_SIDANG_USULAN){
+            Schedule::where(["id"=>$req->id])->update(["type"=>ScheduleType::SIDANG_KOMPREHENSIF,"status"=>$req->status]);
+        }elseif($req->status == ScheduleStatus::GRADUATE_SIDANG_KOMPREHENSIF){
+            Schedule::where(["id"=>$req->id])->update(["type"=>ScheduleType::SIDANG_AKHIR,"status"=>$req->status]);
+        }else{
+            Schedule::where(["id"=>$req->id])->update(["status"=>$req->status]);
+        }
         return $this->successBack(false);
     }
 }
