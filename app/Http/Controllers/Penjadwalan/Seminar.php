@@ -40,10 +40,15 @@ class Seminar extends Controller
     public function view(Request $req)
     {
         $req->validate([
-            "date"=>"required"
+            "date"=>"required",
+            "room_id"=>"numeric"
         ]);
         $title = "Detail Data Seminar ($req->date)";
-        $data = Schedule::where("start_date",$req->date)->orderBy("room_id","DESC")->get();
+        if ($req->has("room_id")){
+            $data = Schedule::where("start_date",$req->date)->where("room_id",$req->room_id)->orderBy("room_id","DESC")->get();
+        }else{
+            $data = Schedule::where("start_date",$req->date)->orderBy("room_id","DESC")->get();
+        }
         return $this->loadView("viewForm",compact("title",'data','req'));
 
     }
