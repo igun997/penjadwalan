@@ -20,9 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="657272b6-7b91-4bd1-ae69-0181d8c7e683" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Master/Sekretariat.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Master/Sekretariat.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Penjadwalan/Seminar.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Penjadwalan/Seminar.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,7 +215,7 @@
       <method v="2" />
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -243,7 +242,7 @@
       <workItem from="1608481977494" duration="1032000" />
       <workItem from="1608483863920" duration="8137000" />
       <workItem from="1608567528424" duration="60000" />
-      <workItem from="1610123628527" duration="330000" />
+      <workItem from="1610123628527" duration="637000" />
     </task>
     <task id="LOCAL-00001" summary="Mapping">
       <created>1600451435694</created>
@@ -357,7 +356,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608492571446</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="fix sekretariat">
+      <created>1610124044862</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1610124044862</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -392,6 +398,7 @@
     <MESSAGE value="filter Seminar.php" />
     <MESSAGE value="up" />
     <MESSAGE value="new gateway" />
-    <option name="LAST_COMMIT_MESSAGE" value="new gateway" />
+    <MESSAGE value="fix sekretariat" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix sekretariat" />
   </component>
 </project>
