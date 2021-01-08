@@ -20,8 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="657272b6-7b91-4bd1-ae69-0181d8c7e683" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/master/mahasiswa/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/master/mahasiswa/form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Master/Sekretariat.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Master/Sekretariat.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,6 +243,7 @@
       <workItem from="1608481977494" duration="1032000" />
       <workItem from="1608483863920" duration="8137000" />
       <workItem from="1608567528424" duration="60000" />
+      <workItem from="1610123628527" duration="330000" />
     </task>
     <task id="LOCAL-00001" summary="Mapping">
       <created>1600451435694</created>
@@ -359,7 +361,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">

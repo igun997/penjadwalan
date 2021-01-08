@@ -61,7 +61,7 @@ class Sekretariat extends Controller
             ]);
             $data = $req->all();
             $data["status"] = StatusAccount::ACTIVE;
-            $data["level"] = LevelAccount::Sekretariat;
+            $data["level"] = LevelAccount::SEKRETARIAT;
             $create = User::create($data);
         }else{
             $create = false;
