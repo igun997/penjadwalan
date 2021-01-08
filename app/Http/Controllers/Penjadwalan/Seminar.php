@@ -53,6 +53,21 @@ class Seminar extends Controller
 
     }
 
+    public function configView(Request $req)
+    {
+        $req->validate([
+            "date"=>"required",
+            "room_id"=>"numeric"
+        ]);
+        $title = "Pengaturan Data Seminar ($req->date)";
+        if ($req->has("room_id")){
+            $data = Schedule::where("start_date",$req->date)->where("room_id",$req->room_id)->orderBy("room_id","DESC")->get();
+        }else{
+            $data = Schedule::where("start_date",$req->date)->orderBy("room_id","DESC")->get();
+        }
+        return $this->loadView("configView",compact("title",'data','req'));
+    }
+
     /**
      * @return mixed
      */

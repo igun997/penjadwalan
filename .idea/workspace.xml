@@ -20,7 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="657272b6-7b91-4bd1-ae69-0181d8c7e683" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/penjadwalan/seminar/configView.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Penjadwalan/Seminar.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Penjadwalan/Seminar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/penjadwalan/seminar/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/penjadwalan/seminar/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +193,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/penjadwalan/seminar" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -199,12 +203,13 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/Http/Controllers/Master" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/penjadwalan/seminar" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers" />
       <recent name="$PROJECT_DIR$/resources/views/master" />
+      <recent name="$PROJECT_DIR$/app/Http/Controllers/Master" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/Http/Controllers/Master" />
     </key>
   </component>
@@ -241,7 +246,7 @@
       <workItem from="1608481977494" duration="1032000" />
       <workItem from="1608483863920" duration="8137000" />
       <workItem from="1608567528424" duration="60000" />
-      <workItem from="1610123628527" duration="763000" />
+      <workItem from="1610123628527" duration="993000" />
     </task>
     <task id="LOCAL-00001" summary="Mapping">
       <created>1600451435694</created>
@@ -369,7 +374,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610124345276</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="fix filter">
+      <created>1610124463750</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1610124463750</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -406,6 +418,7 @@
     <MESSAGE value="new gateway" />
     <MESSAGE value="fix sekretariat" />
     <MESSAGE value="fix sort" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix sort" />
+    <MESSAGE value="fix filter" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix filter" />
   </component>
 </project>

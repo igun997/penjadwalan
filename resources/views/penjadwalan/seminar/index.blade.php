@@ -42,7 +42,7 @@
                                     <td>{{number_format($row->total_partisipan)}} Orang</td>
                                     <td>{{number_format($row->total_ruangan)}} Ruangan</td>
                                     <td>
-                                        <a href="" class="btn btn-primary m-2">
+                                        <a href="{{route("seminar.view.config",["date"=>$row->start_date->format("Y-m-d")])}}" class="btn btn-primary m-2">
                                             <li class="fa fa-cogs"></li>
                                         </a>
                                         <a href="{{route("seminar.view",["date"=>$row->start_date->format("Y-m-d")])}}" class="btn btn-primary m-2">

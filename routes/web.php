@@ -114,6 +114,7 @@ Route::prefix("seminar")->middleware("gateway:1")->name("seminar.")->namespace("
     Route::get("/delete/{id}","Seminar@delete")->name("delete");
 
     Route::get("/view","Seminar@view")->name("view");
+    Route::get("/config","Seminar@configView")->name("view.config");
 });
 
 
