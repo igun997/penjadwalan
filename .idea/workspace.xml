@@ -246,7 +246,7 @@
       <workItem from="1608483863920" duration="8137000" />
       <workItem from="1608567528424" duration="60000" />
       <workItem from="1610123628527" duration="7097000" />
-      <workItem from="1610166942096" duration="7948000" />
+      <workItem from="1610166942096" duration="8397000" />
     </task>
     <task id="LOCAL-00001" summary="Mapping">
       <created>1600451435694</created>
@@ -409,7 +409,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610186126780</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="import / export ruangan">
+      <created>1610186648441</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1610186648441</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -451,7 +458,8 @@
     <MESSAGE value="added sidang seminar" />
     <MESSAGE value="fix name" />
     <MESSAGE value="edit ruagan + time" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit ruagan + time" />
+    <MESSAGE value="import / export ruangan" />
+    <option name="LAST_COMMIT_MESSAGE" value="import / export ruangan" />
   </component>
   <component name="WindowStateProjectService">
     <state x="416" y="155" width="526" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610129148221">

@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Casts\LevelAccount;
+use App\Models\Handler;
 use App\Models\Room;
+use App\Models\User;
 use Igun997\Utility\Excel;
 use Illuminate\Http\Request;
 
@@ -42,6 +45,15 @@ class Utility extends Controller
             "E1"=>"* Jika Tidak Memiliki Kelas & Semester isi Dengan dash '-'",
         ];
         $excel = new Excel();
+        $row =[];
+        foreach (Handler::all() as $index => $item) {
+            $row["A".($index+2)] = ($index+1);
+            $row["B".($index+2)] = $item->nip;
+            $row["C".($index+2)] = $item->name;
+            $row["D".($index+2)] = $item->kelas;
+            $row["E".($index+2)] = $item->semester;
+        }
+        $template = array_merge($template,$row);
         try {
             $excel->properties([
                 "creator" => "UNIKOM",
@@ -63,6 +75,14 @@ class Utility extends Controller
             "D1"=>"password",
         ];
         $excel = new Excel();
+        $row =[];
+        foreach (User::where(["level"=>LevelAccount::SEKRETARIAT])->get() as $index => $item) {
+            $row["A".($index+2)] = ($index+1);
+            $row["B".($index+2)] = $item->name;
+            $row["C".($index+2)] = $item->username;
+            $row["D".($index+2)] = "";
+        }
+        $template = array_merge($template,$row);
         try {
             $excel->properties([
                 "creator" => "UNIKOM",
@@ -85,6 +105,16 @@ class Utility extends Controller
             "E1"=>"password",
         ];
         $excel = new Excel();
+        $row =[];
+        foreach (User::where(["level"=>LevelAccount::MAHASISWA])->get() as $index => $item) {
+            $row["A".($index+2)] = ($index+1);
+            $row["B".($index+2)] = $item->username;
+            $row["B".($index+2)] = $item->name;
+            $row["C".($index+2)] = $item->kelas;
+            $row["D".($index+2)] = $item->semester;
+            $row["E".($index+2)] ="";
+        }
+        $template = array_merge($template,$row);
         try {
             $excel->properties([
                 "creator" => "UNIKOM",
