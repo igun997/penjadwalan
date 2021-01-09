@@ -135,6 +135,7 @@
       <path value="$PROJECT_DIR$/vendor/igun997/utility" />
       <path value="$PROJECT_DIR$/vendor/salmanzafar/laravel-crud-generator" />
       <path value="$PROJECT_DIR$/vendor/fx3costa/laravelchartjs" />
+      <path value="$PROJECT_DIR$/vendor/h4cc/wkhtmltopdf-i386" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.4" />

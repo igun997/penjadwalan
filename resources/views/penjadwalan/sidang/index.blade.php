@@ -14,8 +14,8 @@
                     <div class="card-title">{{((isset($title))?$title:"")}}</div>
                 </div>
                 <div class="card-body">
-                    <a href="{{route("template.sidang")}}" class="btn btn-primary ml-2 mb-4">
-                        <li class="fa fa-download"></li> Template Excel
+                    <a href="{{route("template.sidang",["type"=>$_GET["type"]])}}" class="btn btn-primary ml-2 mb-4">
+                        <li class="fa fa-download"></li> Export Data
                     </a>
                     <div class="table-responsive">
                         <table id="sidang" class="table table-bordered">

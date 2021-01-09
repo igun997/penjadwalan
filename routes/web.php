@@ -14,6 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get("/","Auth@index")->name("login");
+Route::get("/template",function (){
+    return view("template.jadwal");
+});
 Route::post("/login","Auth@login")->name("login.post");
 Route::get("/logout","Auth@logout")->name("login");
 Route::prefix("/template")->name("template.")->group(function (){

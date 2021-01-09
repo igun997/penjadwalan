@@ -1,0 +1,159 @@
+/*
+  This stylesheet only contains information to theme the page. The site
+  layout and printing styles should still fully function without this file.
+
+  This is also a good lightweight starting stylesheet for styling the page.
+*/
+
+/******************************
+    CSS Reset (important for cross-browser compatibility)
+******************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    /*font-size: 100%;*/
+    font-family: inherit;
+    vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+    outline: 0;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: "";
+}
+blockquote, q {
+    quotes: "" "";
+}
+
+/******************************
+    Basic page layout
+******************************/
+.paper-page {
+    background-color:#fff;
+    padding: 2.5em; /* 2.5em = 0.5inches; 5 em = 1 inch;  */
+}
+
+/* To make changes appear in the print version, make sure that you are writing
+   css outside @media screen {} */
+@media screen {
+    html {
+        background-color: #ddd;
+    }
+    body {
+        padding: 2em 0;
+    }
+    .paper-page {
+        /* To scale the content in the page shown in the browser, edit this font-size */
+        /* Currently inconsistent with different browsers; font-size: 1em; */
+        box-shadow: 0 0.25em 1em rgba(0,0,0, 0.2);
+    }
+}
+.paper-page > article {
+    /*  To change the base font size in the page, calculate a relative size from
+        based off the 20px body font size.
+
+        Because Chrome and several other browsers don't render non-integer font
+        sizes (e.g. 14.4px), this conversion table should be used to maintain
+        browser compatibility.
+
+        Example Conversion table:
+        ┌──────┬────┬─────────┐ ┌──────┬────┬─────────┐
+        │Target│Root│font-size│ │Target│Base│font-size│
+        ├──────┼────┼─────────┤ ├──────┼────┼─────────┤
+        │  20px/20px=1em      │ │  36px/16px=2.25em   │
+        ├──────┼────┼─────────┤ ├──────┼────┼─────────┤
+        │  18px/20px=0.9em    │ │  24px/16px=1.5em    │
+        ├──────┼────┼─────────┤ ├──────┼────┼─────────┤
+        │  16px/20px=0.8em    │ │  20px/16px=1.25em   │
+        ├──────┼────┼─────────┤ ├──────┼────┼─────────┤
+        │  14px/20px=0.7em    │ │  16px/16px=1em      │
+        ├──────┼────┼─────────┤ ├──────┼────┼─────────┤
+        │  12px/20px=0.6em    │ │  12px/16px=0.75em   │
+        └──────┴────┴─────────┘ └──────┴────┴─────────┘
+     */
+    font-size: 0.8em;
+}
+
+/******************************
+    Minimalistic General styling
+******************************/
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+p, ul, ol{
+    line-height: 1.5em;
+    text-rendering: optimizeLegibility;
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+}
+.paper-page article > *:first-child {
+    margin-top: 0;
+}
+
+ul, ol {
+    list-style-position: inside;
+    padding-left: 1.5em;
+    text-indent: -1em;
+}
+ul {
+    list-style-type: disc;
+}
+ol {
+    list-style-type: decimal;
+}
+ul ul, ol ul {
+    list-style-type: circle
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+    margin-top: 0.5em;
+}
+/* Modular scale 16px @ 1:1.5, 32px @ 1:1.5; Rounded even */
+h1 {
+    font-size: 2em;
+}
+h2 {
+    font-size: 1.5em;
+}
+h3 {
+    font-size: 1.375em;
+}
+h4 {
+    font-size: 1em;
+}
+h5 {
+    font-size: .875em;
+}
+h6 {
+    font-size: .625em;
+}

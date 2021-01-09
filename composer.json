@@ -16,6 +16,7 @@
         "fruitcake/laravel-cors": "^1.0",
         "fx3costa/laravelchartjs": "^2.8",
         "guzzlehttp/guzzle": "^6.3",
+        "h4cc/wkhtmltopdf-i386": "0.12.4",
         "igun997/utility": "^0.0.3",
         "jeroennoten/laravel-adminlte": "^3.4",
         "jimmyjs/laravel-report-generator": "^2.0",

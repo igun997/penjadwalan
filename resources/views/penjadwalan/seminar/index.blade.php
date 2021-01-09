@@ -17,11 +17,8 @@
                     <a href="{{route("seminar.add")}}" class="btn btn-success ml-2 mb-4">
                         <li class="fa fa-plus"></li> Tambah Data
                     </a>
-                    <button id="import" type="button" class="btn btn-primary ml-2 mb-4">
-                        <li class="fa fa-upload"></li> Upload via Excel
-                    </button>
-                    <a href="{{route("template.seminar")}}" class="btn btn-primary ml-2 mb-4">
-                        <li class="fa fa-download"></li> Template Excel
+                    <a href="{{route("template.sidang",["type"=>0])}}" class="btn btn-primary ml-2 mb-4">
+                        <li class="fa fa-download"></li> Export Data
                     </a>
                     <div class="table-responsive">
                         <table id="seminar" class="table table-bordered">

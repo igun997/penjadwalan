@@ -20,12 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="657272b6-7b91-4bd1-ae69-0181d8c7e683" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/base-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/papper.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/template/jadwal.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/penjadwalan.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/penjadwalan.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Master/Dosen.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Master/Dosen.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Utility.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Utility.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Gateway.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Gateway.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/jadwal/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/jadwal/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/master/dosen/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/master/dosen/form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/master/mahasiswa/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/master/mahasiswa/form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/snappy.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/snappy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/penjadwalan/seminar/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/penjadwalan/seminar/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/penjadwalan/sidang/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/penjadwalan/sidang/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +44,13 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -181,6 +196,7 @@
       <path value="$PROJECT_DIR$/vendor/igun997/utility" />
       <path value="$PROJECT_DIR$/vendor/salmanzafar/laravel-crud-generator" />
       <path value="$PROJECT_DIR$/vendor/fx3costa/laravelchartjs" />
+      <path value="$PROJECT_DIR$/vendor/h4cc/wkhtmltopdf-i386" />
     </include_path>
   </component>
   <component name="ProjectId" id="1hgh5PntPyzF3g3mySKFzMPsgIM" />
@@ -197,6 +213,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/penjadwalan" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -251,7 +268,7 @@
       <workItem from="1608483863920" duration="8137000" />
       <workItem from="1608567528424" duration="60000" />
       <workItem from="1610123628527" duration="7097000" />
-      <workItem from="1610166942096" duration="11930000" />
+      <workItem from="1610166942096" duration="15496000" />
     </task>
     <task id="LOCAL-00001" summary="Mapping">
       <created>1600451435694</created>
@@ -435,7 +452,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610189277254</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="jadwal dosen">
+      <created>1610192213399</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1610192213399</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -455,7 +479,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Mapping" />
     <MESSAGE value="Master Ruangan" />
     <MESSAGE value="Trait Construct" />
     <MESSAGE value="Add / Update Ruangan" />
@@ -480,9 +503,14 @@
     <MESSAGE value="import / export ruangan" />
     <MESSAGE value="import / export all" />
     <MESSAGE value="jadwal siswa" />
-    <option name="LAST_COMMIT_MESSAGE" value="jadwal siswa" />
+    <MESSAGE value="jadwal dosen" />
+    <option name="LAST_COMMIT_MESSAGE" value="jadwal dosen" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="312" y="78" width="734" height="632" key="#Inspections" timestamp="1610193099279">
+      <screen x="0" y="26" width="1366" height="742" />
+    </state>
+    <state x="312" y="78" width="734" height="632" key="#Inspections/0.26.1366.742@0.26.1366.742" timestamp="1610193099279" />
     <state x="416" y="155" width="526" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610187624348">
       <screen x="0" y="26" width="1366" height="742" />
     </state>
@@ -495,9 +523,13 @@
       <screen x="0" y="26" width="1366" height="742" />
     </state>
     <state x="278" y="129" width="802" height="531" key="Vcs.Push.Dialog.v2/0.26.1366.742@0.26.1366.742" timestamp="1610189279160" />
-    <state x="385" y="130" width="596" height="534" key="find.popup" timestamp="1610188389836">
+    <state x="337" y="26" width="685" height="737" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1610193355238">
       <screen x="0" y="26" width="1366" height="742" />
     </state>
-    <state x="385" y="130" width="596" height="534" key="find.popup/0.26.1366.742@0.26.1366.742" timestamp="1610188389836" />
+    <state x="337" y="26" width="685" height="737" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.26.1366.742@0.26.1366.742" timestamp="1610193355238" />
+    <state x="385" y="130" width="596" height="534" key="find.popup" timestamp="1610193393332">
+      <screen x="0" y="26" width="1366" height="742" />
+    </state>
+    <state x="385" y="130" width="596" height="534" key="find.popup/0.26.1366.742@0.26.1366.742" timestamp="1610193393332" />
   </component>
 </project>

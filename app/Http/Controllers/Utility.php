@@ -5,9 +5,11 @@ namespace App\Http\Controllers;
 use App\Casts\LevelAccount;
 use App\Models\Handler;
 use App\Models\Room;
+use App\Models\Schedule;
 use App\Models\User;
 use Igun997\Utility\Excel;
 use Illuminate\Http\Request;
+use PDF;
 
 class Utility extends Controller
 {
@@ -95,6 +97,16 @@ class Utility extends Controller
         }
     }
 
+    public function excel_template_sidang(Request $req)
+    {
+        $req->validate([
+            "type"=>"required"
+        ]);
+        $jadwal = Schedule::where(["type"=>$req->type])->get();
+        $type = $req->type;
+        $pdf = PDF::loadView('template.jadwal',compact("jadwal","type"));
+        return $pdf->stream();
+    }
     public function excel_template_mahasiswa()
     {
         $template = [

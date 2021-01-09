@@ -91,11 +91,11 @@ class Gateway
                             "url"=>"sidang?type=".ScheduleType::SIDANG_AKHIR,
                             "icon"=>"fa fa-calendar"
                         ]);
-                        $e->menu->add([
-                            "text"=>"Laporan",
-                            "url"=>"cetak",
-                            "icon"=>"fa fa-file"
-                        ]);
+//                        $e->menu->add([
+//                            "text"=>"Laporan",
+//                            "url"=>"cetak",
+//                            "icon"=>"fa fa-file"
+//                        ]);
                     });
                 }elseif ($level == 2){
                     Event::listen("JeroenNoten\LaravelAdminLte\Events\BuildingMenu",function ($e){
