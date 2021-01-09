@@ -21,10 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="657272b6-7b91-4bd1-ae69-0181d8c7e683" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Penjadwalan/Seminar.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Penjadwalan/Seminar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Penjadwalan/Sidang.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Penjadwalan/Sidang.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/penjadwalan/seminar/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/penjadwalan/seminar/form.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/penjadwalan/sidang/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/penjadwalan/sidang/form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Utility.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Utility.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -249,7 +246,7 @@
       <workItem from="1608483863920" duration="8137000" />
       <workItem from="1608567528424" duration="60000" />
       <workItem from="1610123628527" duration="7097000" />
-      <workItem from="1610166942096" duration="7469000" />
+      <workItem from="1610166942096" duration="7948000" />
     </task>
     <task id="LOCAL-00001" summary="Mapping">
       <created>1600451435694</created>
@@ -405,7 +402,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610177463275</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="edit ruagan + time">
+      <created>1610186126780</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1610186126780</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -446,7 +450,8 @@
     <MESSAGE value="fix init config layout" />
     <MESSAGE value="added sidang seminar" />
     <MESSAGE value="fix name" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix name" />
+    <MESSAGE value="edit ruagan + time" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit ruagan + time" />
   </component>
   <component name="WindowStateProjectService">
     <state x="416" y="155" width="526" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610129148221">
@@ -457,9 +462,9 @@
       <screen x="0" y="26" width="1366" height="742" />
     </state>
     <state x="466" y="155" width="426" height="479" key="FileChooserDialogImpl/0.26.1366.742@0.26.1366.742" timestamp="1610175367998" />
-    <state x="278" y="129" width="802" height="531" key="Vcs.Push.Dialog.v2" timestamp="1610177812036">
+    <state x="278" y="129" width="802" height="531" key="Vcs.Push.Dialog.v2" timestamp="1610186128480">
       <screen x="0" y="26" width="1366" height="742" />
     </state>
-    <state x="278" y="129" width="802" height="531" key="Vcs.Push.Dialog.v2/0.26.1366.742@0.26.1366.742" timestamp="1610177812036" />
+    <state x="278" y="129" width="802" height="531" key="Vcs.Push.Dialog.v2/0.26.1366.742@0.26.1366.742" timestamp="1610186128480" />
   </component>
 </project>

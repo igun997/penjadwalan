@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Room;
 use Igun997\Utility\Excel;
 use Illuminate\Http\Request;
 
@@ -13,6 +14,12 @@ class Utility extends Controller
             "A1"=>"no",
             "B1"=>"nama",
         ];
+        $row =[];
+        foreach (Room::all() as $index => $item) {
+            $row["A".($index+2)] = ($index+1);
+            $row["B".($index+2)] = $item->name;
+        }
+        $template = array_merge($template,$row);
         $excel = new Excel();
         try {
             $excel->properties([
