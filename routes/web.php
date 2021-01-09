@@ -137,7 +137,7 @@ Route::prefix("sidang")->middleware("gateway:1")->name("sidang.")->namespace("Pe
 });
 //Siswa
 Route::prefix("jadwal")->middleware("gateway:2")->namespace("Jadwal")->name("jadwal.")->group(function (){
-    Route::get("/","Jadwal@index")->name("list");
+    Route::get("/","Penjadwalan@index")->name("list");
 });
 
 
