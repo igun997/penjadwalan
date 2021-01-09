@@ -165,11 +165,17 @@ class Seminar extends Controller
     {
         $req->validate([
             "id"=>"required",
+            "time_start"=>"required",
+            "time_end"=>"required",
+            "room_id"=>"required",
             "handler_2"=>"required",
             "handler_3"=>"required",
         ]);
         foreach ($req->id as $k => $row) {
             $find = Schedule::find($row);
+            $find->room_id = $req->room_id[$k];
+            $find->start_time = $req->time_start[$k];
+            $find->end_time = $req->time_end[$k];
             $find->handler_2 = $req->handler_2[$k];
             $find->handler_3 = $req->handler_3[$k];
             $find->save();

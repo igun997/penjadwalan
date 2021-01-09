@@ -91,9 +91,23 @@
                                                     <tr>
                                                         <td>{{$row->user->name}}</td>
                                                         <td>{{$row->pembimbing->name}}</td>
-                                                        <td>{{$row->room->name}}</td>
-                                                        <td>{{$row->start_time}}</td>
-                                                        <td>{{$row->end_time}} <input type="text"  value="{{$row->id}}" name="id[]" hidden></td>
+                                                        <td>
+                                                            <select name="room_id[]" class="form-control">
+                                                                @foreach($data_ruangan as $r)
+                                                                    @if($row->room_id === $r->id)
+                                                                        <option  selected value="{{$r->id}}">{{$r->name}}</option>
+                                                                    @else
+                                                                        <option  value="{{$r->id}}">{{$r->name}}</option>
+                                                                    @endif
+                                                                @endforeach
+                                                            </select>
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" name="time_start[]" class="time form-control" value="{{$row->start_time}}">
+                                                        </td>
+                                                        <td>
+                                                            <input type="text" name="time_end[]" class="time form-control" value="{{$row->end_time}}">
+                                                            <input type="text"  value="{{$row->id}}" name="id[]" hidden></td>
                                                         @if(isset($row->penguji_satu->name))
                                                             <td>
 
@@ -264,6 +278,12 @@
                     location.href = c+"?date={{$sdate}}";
                 }
             })
+            $("#mhs_list").find(".time").timepicker({
+                showSeconds: true,
+                showMeridian: false,
+                defaultTime: false,
+                minuteStep: 1,
+            });
 
         })
     </script>
