@@ -9,6 +9,7 @@ class LevelAccount implements CastsAttributes
     const  ADMIN = 0;
     const  SEKRETARIAT = 1;
     const  MAHASISWA = 2;
+    const  DOSEN = 3;
     /**
      * Cast the given value.
      *

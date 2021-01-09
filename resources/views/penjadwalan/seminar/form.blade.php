@@ -228,8 +228,8 @@
                             `<td>${_list_mhs()}</td>`,
                             `<td>${_list_dosen(null,1)}</td>`,
                             `<td>${_list_room()}</td>`,
-                            `<td><input class="form-control time" type="time" name="time_start[]" /></td>`,
-                            `<td><input class="form-control time" type="time" name="time_end[]" /></td>`,
+                            `<td><input class="form-control time"  name="time_start[]" /></td>`,
+                            `<td><input class="form-control time"  name="time_end[]" /></td>`,
                             @if(isset($route))
                             `<td>${_list_dosen(null,2)}</td>`,
                             `<td>${_list_dosen(null,3)}</td>`,
@@ -246,6 +246,12 @@
             }
             $("#add_mhs").on("click",function () {
                 $("#mhs_list").append(add_form().join(""));
+                $("#mhs_list").find(".time").timepicker({
+                    showSeconds: true,
+                    showMeridian: false,
+                    defaultTime: false,
+                    minuteStep: 1,
+                });
             });
             @endif
 

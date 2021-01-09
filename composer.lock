@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ef89feb938e33ebcdf3586b09fe702a5",
+    "content-hash": "286c29114ddd53f9356dbbb7854324db",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -1042,6 +1042,58 @@
                 "laravel"
             ],
             "time": "2020-04-28T08:47:37+00:00"
+        },
+        {
+            "name": "fx3costa/laravelchartjs",
+            "version": "2.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fxcosta/laravel-chartjs.git",
+                "reference": "f6560fa90ad2b12e11959fb5addda045d068f224"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fxcosta/laravel-chartjs/zipball/f6560fa90ad2b12e11959fb5addda045d068f224",
+                "reference": "f6560fa90ad2b12e11959fb5addda045d068f224",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^5.1|^6.0|^7.0|^8.0",
+                "php": ">=5.6.4"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Fx3costa\\LaravelChartJs\\Providers\\ChartjsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Fx3costa\\LaravelChartJs\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Felix",
+                    "email": "fx3costa@gmail.com"
+                }
+            ],
+            "description": "Simple package to facilitate and automate the use of charts in Laravel 5.x using Chartjs v2 library",
+            "keywords": [
+                "chart",
+                "chartjs",
+                "fx3costa",
+                "graphics",
+                "laravel5",
+                "reports"
+            ],
+            "time": "2020-09-11T14:24:54+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -3616,68 +3668,6 @@
                 "stylesheet"
             ],
             "time": "2020-06-01T09:10:00+00:00"
-        },
-        {
-            "name": "salmanzafar/laravel-crud-generator",
-            "version": "v1.0.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/salmanzafar949/Laravel-Crud-Generator.git",
-                "reference": "a4b4848127c0ee8a8de5b2e51234c5a37abd045a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/salmanzafar949/Laravel-Crud-Generator/zipball/a4b4848127c0ee8a8de5b2e51234c5a37abd045a",
-                "reference": "a4b4848127c0ee8a8de5b2e51234c5a37abd045a",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^7.0 || ^7.1 || ^7.2 || ^7.3 || ^7.4"
-            },
-            "require-dev": {
-                "laravel/framework": "^5.5 || ^6.0 || ^7.0 || ^8.0"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Salman\\CrudGenerator\\CrudGeneratorServiceProvider"
-                    ],
-                    "aliases": {
-                        "CrudGenerator": "Salman\\CrudGenerator\\Facades\\CrudGenerator"
-                    }
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Salman\\CrudGenerator\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Salman Zafar",
-                    "email": "salmanzafar949@gmail.com"
-                }
-            ],
-            "description": "A simple Laravel library that allows you to create crud operations with a single command",
-            "keywords": [
-                "laravel",
-                "laravel-5",
-                "laravel-6",
-                "laravel-7",
-                "laravel-8",
-                "laravel-api-crud-generator",
-                "laravel-crud-generator",
-                "laravel5",
-                "laravel6",
-                "laravel7",
-                "laravel8"
-            ],
-            "time": "2020-10-12T13:42:52+00:00"
         },
         {
             "name": "setasign/fpdf",
@@ -6987,6 +6977,68 @@
                 "xunit"
             ],
             "time": "2020-06-22T07:06:58+00:00"
+        },
+        {
+            "name": "salmanzafar/laravel-crud-generator",
+            "version": "v1.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/salmanzafar949/Laravel-Crud-Generator.git",
+                "reference": "a4b4848127c0ee8a8de5b2e51234c5a37abd045a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/salmanzafar949/Laravel-Crud-Generator/zipball/a4b4848127c0ee8a8de5b2e51234c5a37abd045a",
+                "reference": "a4b4848127c0ee8a8de5b2e51234c5a37abd045a",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0 || ^7.1 || ^7.2 || ^7.3 || ^7.4"
+            },
+            "require-dev": {
+                "laravel/framework": "^5.5 || ^6.0 || ^7.0 || ^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Salman\\CrudGenerator\\CrudGeneratorServiceProvider"
+                    ],
+                    "aliases": {
+                        "CrudGenerator": "Salman\\CrudGenerator\\Facades\\CrudGenerator"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Salman\\CrudGenerator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Salman Zafar",
+                    "email": "salmanzafar949@gmail.com"
+                }
+            ],
+            "description": "A simple Laravel library that allows you to create crud operations with a single command",
+            "keywords": [
+                "laravel",
+                "laravel-5",
+                "laravel-6",
+                "laravel-7",
+                "laravel-8",
+                "laravel-api-crud-generator",
+                "laravel-crud-generator",
+                "laravel5",
+                "laravel6",
+                "laravel7",
+                "laravel8"
+            ],
+            "time": "2020-10-12T13:42:52+00:00"
         },
         {
             "name": "scrivo/highlight.php",

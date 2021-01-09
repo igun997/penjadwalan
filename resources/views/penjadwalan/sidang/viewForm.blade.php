@@ -49,6 +49,7 @@
                             <thead>
                             <tr>
                                 <th>No</th>
+                                <th>Nama Mahasiswa</th>
                                 <th>Waktu Mulai</th>
                                 <th>Waktu Selesai</th>
                                 <th>Ruangan</th>
@@ -62,6 +63,7 @@
                             @foreach($data as $num => $row)
                                 <tr>
                                     <td>{{($num+1)}}</td>
+                                    <td>{{($row->user->name)}}</td>
                                     <td>{{($row->start_time)}}</td>
                                     <td>{{($row->end_time)}}</td>
                                     <td>{{($row->room->name)}}</td>

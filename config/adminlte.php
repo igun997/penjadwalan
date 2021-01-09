@@ -453,6 +453,20 @@ return [
                     'location' => '//cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.4.0/bootbox.min.js',
                 ],
             ],
+        ],[
+            'name' => 'TimePIcker',
+            'active' => true,
+            'files' => [
+                [
+                    'type' => 'js',
+                    'asset' => false,
+                    'location' => '//cdnjs.cloudflare.com/ajax/libs/bootstrap-timepicker/0.5.2/js/bootstrap-timepicker.min.js',
+                ],[
+                    'type' => 'css',
+                    'asset' => false,
+                    'location' => '//cdnjs.cloudflare.com/ajax/libs/bootstrap-timepicker/0.5.2/css/bootstrap-timepicker.min.css',
+                ],
+            ],
         ]
     ],
 ];
