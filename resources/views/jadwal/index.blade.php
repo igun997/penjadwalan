@@ -37,9 +37,9 @@
                                         <td>{{$r->start_time}} - {{$r->end_time}}</td>
                                         <td {{($r->user_id == session()->get("id"))?'class=bg-danger':""}}>{{$r->user->name}}</td>
                                         <td>{{$r->user->username}}</td>
-                                        <td>{{$r->pembimbing->name ?? "-"}}</td>
-                                        <td>{{$r->penguji_satu->name ?? "-"}}</td>
-                                        <td>{{$r->penguji_dua->name ?? "-"}}</td>
+                                        <td {{@($r->pembimbing->nip == session()->get("nip"))?'class=bg-danger':""}}>{{$r->pembimbing->name ?? "-"}}</td>
+                                        <td {{@($r->pembimbing->nip == session()->get("nip"))?'class=bg-danger':""}}>{{$r->penguji_satu->name ?? "-"}}</td>
+                                        <td {{@($r->pembimbing->nip == session()->get("nip"))?'class=bg-danger':""}}>{{$r->penguji_dua->name ?? "-"}}</td>
                                     </tr>
                                 @endforeach
                                 </tbody>

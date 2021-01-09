@@ -25,7 +25,7 @@ Route::prefix("/template")->name("template.")->group(function (){
     Route::get("/sidang","Utility@excel_template_sidang")->name("sidang");
 });
 
-Route::get("/dashboard","Dashboard@index")->middleware("gateway:0|1|2")->name("dashboard");
+Route::get("/dashboard","Dashboard@index")->middleware("gateway:0|1|2|3")->name("dashboard");
 //Admin
 Route::prefix("master")->middleware("gateway:0")->name("master.")->namespace("Master")->group(function(){
     Route::prefix("ruangan")->name("ruangan.")->group(function (){
@@ -136,7 +136,7 @@ Route::prefix("sidang")->middleware("gateway:1")->name("sidang.")->namespace("Pe
     Route::get("/update_status","Sidang@updateStatus")->name("config.update_status");
 });
 //Siswa
-Route::prefix("jadwal")->middleware("gateway:2")->namespace("Jadwal")->name("jadwal.")->group(function (){
+Route::prefix("jadwal")->middleware("gateway:2|3")->namespace("Jadwal")->name("jadwal.")->group(function (){
     Route::get("/","Penjadwalan@index")->name("list");
 });
 

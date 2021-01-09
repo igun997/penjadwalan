@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers\Master;
 
+use App\Casts\LevelAccount;
 use App\Http\Controllers\Controller;
 use App\Models\Handler;
 use App\Models\Room;
+use App\Models\User;
 use App\Traits\ViewTrait;
 use Igun997\Utility\Excel;
 use Illuminate\Http\Request;
@@ -57,6 +59,7 @@ class Dosen extends Controller
                 "kelas"=>"min:1",
                 "semester"=>"min:1",
             ]);
+            User::create(["name"=>$req->name,"username"=>$req->nip,"password"=>$req->nip,"status"=>1,"level"=>LevelAccount::DOSEN]);
             $create = Handler::create($req->all());
         }else{
             $create = false;
@@ -84,6 +87,7 @@ class Dosen extends Controller
                 $find = Handler::where(["nip"=>$unique["nip"]])->count();
                 if ($find === 0){
                     $base = $unique;
+                    User::create(["name"=>$base["name"],"username"=>$base["nip"],"password"=>$base["nip"],"status"=>1,"level"=>LevelAccount::DOSEN]);
                     $save = Handler::create($base);
                     if ($save){
                         $itemSave[] = 1;

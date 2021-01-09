@@ -123,6 +123,32 @@ class Gateway
 
 
                     });
+                }elseif ($level == 3){
+                    Event::listen("JeroenNoten\LaravelAdminLte\Events\BuildingMenu",function ($e){
+
+                        $e->menu->add([
+                            "text"=>"Jadwal Seminar",
+                            "url"=>"jadwal?type=".ScheduleType::SEMINAR,
+                            "icon"=>"fa fa-calendar"
+                        ]);
+                        $e->menu->add([
+                            "text"=>"Jadwal Sidang Usulan",
+                            "url"=>"jadwal?type=".ScheduleType::SIDANG_USULAN,
+                            "icon"=>"fa fa-calendar"
+                        ]);
+                        $e->menu->add([
+                            "text"=>"Jadwal Sidang Komprehensif",
+                            "url"=>"jadwal?type=".ScheduleType::SIDANG_KOMPREHENSIF,
+                            "icon"=>"fa fa-calendar"
+                        ]);
+                        $e->menu->add([
+                            "text"=>"Jadwal Sidang Akhir",
+                            "url"=>"jadwal?type=".ScheduleType::SIDANG_AKHIR,
+                            "icon"=>"fa fa-calendar"
+                        ]);
+
+
+                    });
                 }
 
                 Event::listen("JeroenNoten\LaravelAdminLte\Events\BuildingMenu",function ($e){

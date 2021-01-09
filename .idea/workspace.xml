@@ -20,9 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="657272b6-7b91-4bd1-ae69-0181d8c7e683" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Jadwal/Penjadwalan.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/jadwal/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Master/Dosen.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Master/Dosen.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Gateway.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Gateway.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/jadwal/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/jadwal/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/master/dosen/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/master/dosen/form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/master/mahasiswa/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/master/mahasiswa/form.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -248,7 +251,7 @@
       <workItem from="1608483863920" duration="8137000" />
       <workItem from="1608567528424" duration="60000" />
       <workItem from="1610123628527" duration="7097000" />
-      <workItem from="1610166942096" duration="10635000" />
+      <workItem from="1610166942096" duration="11930000" />
     </task>
     <task id="LOCAL-00001" summary="Mapping">
       <created>1600451435694</created>
@@ -425,7 +428,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610186994838</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="jadwal siswa">
+      <created>1610189277254</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1610189277254</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -469,7 +479,8 @@
     <MESSAGE value="edit ruagan + time" />
     <MESSAGE value="import / export ruangan" />
     <MESSAGE value="import / export all" />
-    <option name="LAST_COMMIT_MESSAGE" value="import / export all" />
+    <MESSAGE value="jadwal siswa" />
+    <option name="LAST_COMMIT_MESSAGE" value="jadwal siswa" />
   </component>
   <component name="WindowStateProjectService">
     <state x="416" y="155" width="526" height="479" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610187624348">
@@ -480,10 +491,10 @@
       <screen x="0" y="26" width="1366" height="742" />
     </state>
     <state x="466" y="155" width="426" height="479" key="FileChooserDialogImpl/0.26.1366.742@0.26.1366.742" timestamp="1610175367998" />
-    <state x="278" y="129" width="802" height="531" key="Vcs.Push.Dialog.v2" timestamp="1610186128480">
+    <state x="278" y="129" width="802" height="531" key="Vcs.Push.Dialog.v2" timestamp="1610189279160">
       <screen x="0" y="26" width="1366" height="742" />
     </state>
-    <state x="278" y="129" width="802" height="531" key="Vcs.Push.Dialog.v2/0.26.1366.742@0.26.1366.742" timestamp="1610186128480" />
+    <state x="278" y="129" width="802" height="531" key="Vcs.Push.Dialog.v2/0.26.1366.742@0.26.1366.742" timestamp="1610189279160" />
     <state x="385" y="130" width="596" height="534" key="find.popup" timestamp="1610188389836">
       <screen x="0" y="26" width="1366" height="742" />
     </state>
