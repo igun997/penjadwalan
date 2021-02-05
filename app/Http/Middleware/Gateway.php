@@ -72,11 +72,6 @@ class Gateway
                 }elseif ($level == 1){
                     Event::listen("JeroenNoten\LaravelAdminLte\Events\BuildingMenu",function ($e){
                         $e->menu->add([
-                            "text"=>"Penjadwalan Seminar",
-                            "url"=>"seminar",
-                            "icon"=>"fa fa-calendar"
-                        ]);
-                        $e->menu->add([
                             "text"=>"Penjadwalan Sidang Usulan",
                             "url"=>"sidang?type=".ScheduleType::SIDANG_USULAN,
                             "icon"=>"fa fa-calendar"
