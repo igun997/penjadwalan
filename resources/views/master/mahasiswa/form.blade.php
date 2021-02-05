@@ -39,6 +39,15 @@
                                 @endif
                             </select>
                         </div>
+
+                        <div class="form-group">
+                            <label>Rombel</label>
+                            <select name="rombel" class="form-control semester" >
+                                @if(isset($data->semester))
+                                    <option value="{{$data->semester}}" selected>{{$data->semester}}</option>
+                                @endif
+                            </select>
+                        </div>
                         <div class="form-group">
                             <label>Password</label>
                             <input type="password" class="form-control" name="password"  value="{{@$data->password}}" required>
